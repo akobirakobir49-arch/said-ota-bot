@@ -41,6 +41,34 @@ Javobni FAQAT quyidagi JSON formatida ber (boshqa hech qanday matn yozma):
 }}"""
 
 
+
+
+# =====================================================================
+# HAR IKKALA RUBRIKA UCHUN UMUMIY TIJORAT QOIDASI
+# =====================================================================
+COMMERCIAL_RULES = """SAVDOGA OID QAT'IY QOIDA (eng muhim band):
+
+Bu kanal oziq-ovqat supermarketiga tegishli. Post do'kon sotadigan mahsulotga
+QARSHI ishlamasligi kerak.
+
+TAQIQLANADI:
+  • Biror mahsulot turini yomonlash: "konservalar zararli", "muzlatilgan mahsulot
+    foydasiz", "do'kon noni sifatsiz", "sanoat mahsulotlari kimyoga to'la" va h.k.
+  • "Sotib olmang", "iste'mol qilmang", "voz keching", "umuman yemang" kabi chaqiriqlar
+  • O'quvchini do'kondan chetlatish: "o'zingiz uyda tayyorlang, do'kondan olmang",
+    "bozordan olgan yaxshiroq"
+  • Qo'shimchalar (E-...), konservantlar, shakar, tuz haqida qo'rqitish
+  • "Tabiiy" va "do'kon mahsuloti" ni qarama-qarshi qo'yish
+
+O'RNIGA SHUNDAY YOZ:
+  • Yomonlash emas — TANLASHGA O'RGAT: "qanday qilib yaxshisini tanlash mumkin",
+    "yorliqda nimaga qarash kerak", "qaysi belgi sifatdan darak beradi"
+  • Mahsulotning qiziqarli va ijobiy tomonini och
+  • Muvozanat kerak bo'lsa neytral yoz: "me'yorida iste'mol qilinadi" (qo'rqitmasdan)
+
+QISQASI: o'quvchi postni o'qib mahsulotga QIZIQISHI kerak, undan qo'rqishi emas."""
+
+
 # =====================================================================
 # 2-BOSQICH: Post matnini yozish
 # =====================================================================
@@ -88,8 +116,15 @@ Bu stil buyurtmachining o'z kanalidan olingan. Undan chetga chiqma.
    • Uydirma statistika yozma. Ishonchsiz raqamni umuman yozma.
    • Aksiya, chegirma, yetkazib berish haqida va'da berma.
    • Qavs ichida [shunday] to'ldiriladigan joy qoldirma.
+   • BOLALAR MAVZUSI: chaqaloq va bolalarni ovqatlantirish rejimi, yosh me'yorlari
+     ("necha oyligidan berish mumkin"), vitamin/mineral tavsiyalari haqida YOZMA.
+     Bu shifokor ishi. Faqat mahsulotning o'zi haqida yoz: qanday tanlash, tarkibida
+     nima bor, qanday saqlash, yorliqda nimaga e'tibor berish.
+   • Homiladorlik, parhez (dieta), kasallik va dori mavzularini umuman ochma.
 
-7) NAMUNALAR — aynan shu ohang, ritm va tuzilishga taqlid qil:
+7) {commercial_rules}
+
+8) NAMUNALAR — aynan shu ohang, ritm va tuzilishga taqlid qil:
 
 NAMUNA 1:
 🥩 <b>Go‘shtni muzlatgichdan chiqarib, iliq suvda eritish — xavfli odat</b>
@@ -178,6 +213,11 @@ QUYIDAGI MEZONLAR BO'YICHA QAT'IY TEKSHIR:
 6. TAQIQLAR — narx, raqobatchi nomi, to'ldirilmagan [qavs] bormi?
 7. QIZIQARLILIK — post haqiqatan foydali va o'qishga arziydimi, yoki quruq umumiy
    gaplarmi?
+8. SAVDOGA TA'SIRI — post supermarket sotadigan mahsulotga QARSHI ishlamaydimi?
+   Biror mahsulot turi yomonlanganmi ("konserva zararli", "do'kon noni sifatsiz"),
+   "sotib olmang / voz keching" degan chaqiriq bormi, qo'shimchalar yoki konservantlar
+   haqida qo'rqitish bormi? O'quvchi postni o'qib mahsulotdan qo'rqib qolmasligi kerak —
+   aksincha qiziqishi kerak.
 
 Javobni FAQAT quyidagi JSON formatida ber:
 {{
@@ -187,7 +227,7 @@ Javobni FAQAT quyidagi JSON formatida ber:
   "fix_instructions": "agar FAIL bo'lsa — postni qanday tuzatish kerakligi bo'yicha aniq ko'rsatma"
 }}
 
-QOIDA: score 80 dan past bo'lsa yoki 1, 2, 5, 6-mezonlarda muammo bo'lsa — verdict "FAIL".
+QOIDA: score 80 dan past bo'lsa yoki 1, 2, 5, 6, 8-mezonlarda muammo bo'lsa — verdict "FAIL".
 Ortiqcha yumshoq bo'lma, lekin arzimas narsaga ham FAIL qo'yma."""
 
 
@@ -225,3 +265,106 @@ lekin post o'zgargan bo'lsa ularni ham moslashtir):
     "explanation": "tushuntirish"
   }}
 }}"""
+
+
+# =====================================================================
+# RUBRIKA 2: "Qiziqarli faktlar" — Bilarmidingiz? ro'yxati
+# =====================================================================
+RESEARCH_PROMPT_FACTS = """Sen "Said Ota Market" supermarketining kontent-tadqiqotchisisan.
+
+RUBRIKA: "Qiziqarli faktlar" — supermarketda sotiladigan mahsulotlar haqida
+KUTILMAGAN, hayratlanarli va eslab qolinadigan faktlar.
+
+BUGUNGI KATEGORIYA: {category}
+
+VAZIFA: Google qidiruvidan foydalanib shu kategoriya bo'yicha 4 ta CHINAKAM
+qiziqarli fakt top. Har biri odamni "voy, bilmagan ekanman!" deyishga majbur qilsin.
+
+QANDAY FAKTLAR KERAK:
+  • Mahsulotning tarixi, kelib chiqishi, nomi qayerdan olingani
+  • Kutilmagan raqamlar (necha gul, necha kun, necha marta, qaysi davlat birinchi)
+  • Dunyo bo'ylab g'aroyib odatlar va an'analar
+  • Tabiatdagi ajablanarli jarayonlar
+  • Rekordlar va "eng"lar
+
+QANDAY FAKTLAR KERAK EMAS:
+  • Hammaga ma'lum narsalar ("olma foydali", "sut kalsiyga boy")
+  • Mahsulotni yomon ko'rsatadigan faktlar (zarari, xavfi, kimyosi haqida)
+  • Sog'liq va davolash bilan bog'liq da'volar
+  • Tekshirib bo'lmaydigan mish-mishlar
+
+TALABLAR:
+  • Faktlar ishonchli manbalardan bo'lsin. Uydirma raqam yozma — ishonchsiz bo'lsa yozma.
+  • Faktlar BITTA umumiy mavzu atrofida bo'lsin (masalan hammasi asal haqida).
+  • Mavsumiylikni hisobga ol: hozir {month_name} oyi.
+
+QUYIDAGI MAVZULAR YAQINDA CHIQQAN — TAKRORLAMA:
+{recent_topics}
+
+Javobni FAQAT quyidagi JSON formatida ber (boshqa hech qanday matn yozma):
+{{
+  "topic": "mavzuning qisqa nomi",
+  "angle": "faktlarni birlashtiruvchi umumiy g'oya (1 jumla)",
+  "facts": [
+    "1-fakt — kutilmagan, aniq, manbaga asoslangan",
+    "2-fakt",
+    "3-fakt",
+    "4-fakt"
+  ],
+  "practical_tip": "shu mahsulot bilan bog'liq kichik amaliy maslahat",
+  "myth_or_surprise": "eng hayratlanarli jihat",
+  "sources": ["manba nomi yoki havolasi", "..."]
+}}"""
+
+
+STYLE_GUIDE_FACTS = """POST STILI VA FORMATI — "Bilarmidingiz?" rubrikasi (qat'iy amal qil).
+
+1) TIL: O'zbek tili, lotin alifbosi. Sodda, jonli, hayajonli ohang.
+   Tipografik apostrof: o‘, g‘ (o' emas).
+
+2) TUZILISHI:
+   • 1-qator: 🤔 emojisi + <b>Bilarmidingiz?</b> va mavzu nomi qalin ichida.
+     Misol: "🤔 <b>Bilarmidingiz? — asal haqida 4 ta hayratlanarli fakt</b>"
+   • Bo'sh qator
+   • 4 ta FAKT. Har biri yangi qatordan, o'z (takrorlanmaydigan) emojisi bilan.
+     Har bir fakt — 1, ko'pi bilan 2 QISQA jumla. Uzun tushuntirish YO'Q.
+     Asosiy raqam yoki nom <b>qalin</b> qilinadi.
+     Faktlar orasida bo'sh qator.
+   • Bo'sh qator
+   • YAKUN: 💬 yoki 🤔 emojisi bilan, <b>qalin</b> savol —
+     "Qaysi fakt sizni ko'proq hayratlantirdi?" kabi.
+
+3) UZUNLIK: 280-650 belgi. Ideal — 350-500. Zich va tez o'qiladigan bo'lsin.
+
+4) EMOJI: har fakt boshida 1 ta, mavzuga mos. Matn ichida emoji YO'Q.
+
+5) FORMATLASH: FAQAT <b>, <i>, <u>, <code>. Markdown YO'Q. Hashtag YO'Q.
+   Footer QO'SHMA — u avtomatik qo'shiladi.
+
+6) {commercial_rules}
+
+7) NAMUNA — aynan shu ritmga taqlid qil:
+
+🤔 <b>Bilarmidingiz? — asal haqida 4 ta hayratlanarli fakt</b>
+
+🍯 Asal deyarli hech qachon buzilmaydi. Misr piramidalaridan topilgan <b>3000 yillik</b> asal hali ham yeyishga yaroqli bo‘lgan.
+
+🐝 Bir choy qoshiq asal uchun asalari umri davomida ishlaydi — bitta asalari butun hayotida shuncha asal yig‘adi.
+
+🌍 Bir kilogramm asal uchun asalarilar taxminan <b>4 million</b> gulni aylanib chiqishi kerak.
+
+🎨 Asalning rangi va ta'mi butunlay gulga bog'liq: qora qarag'ay asali deyarli qora, akatsiyaniki esa suvdek tiniq bo‘ladi.
+
+💬 <b>Qaysi fakt sizni ko‘proq hayratlantirdi?</b>"""
+
+
+# =====================================================================
+# RUBRIKALAR REYESTRI
+# =====================================================================
+def style_guide(rubric: str = "useful") -> str:
+    g = STYLE_GUIDE_FACTS if rubric == "facts" else STYLE_GUIDE
+    return g.replace("{commercial_rules}", COMMERCIAL_RULES)
+
+
+def research_prompt(rubric: str = "useful") -> str:
+    return RESEARCH_PROMPT_FACTS if rubric == "facts" else RESEARCH_PROMPT

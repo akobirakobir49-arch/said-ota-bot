@@ -262,11 +262,12 @@ def _json_generate(payload: dict, max_tokens: int, timeout: int = 180) -> dict:
 # ------------------------------------------------------------------
 # 1) Internetdan mavzu qidirish — google_search grounding bilan
 # ------------------------------------------------------------------
-def research(category: str, month_name: str, recent_topics: list[str]) -> dict:
+def research(category: str, month_name: str, recent_topics: list[str],
+             rubric: str = "useful") -> dict:
     import prompts
 
     recent = "\n".join(f"- {t}" for t in recent_topics) if recent_topics else "- (hali yo'q)"
-    prompt = prompts.RESEARCH_PROMPT.format(
+    prompt = prompts.research_prompt(rubric).format(
         category=category, month_name=month_name, recent_topics=recent
     )
     payload = {
@@ -298,18 +299,19 @@ def _json_call(prompt: str, temperature: float = 0.85,
     return _json_generate(payload, max_tokens or config.MAX_TOKENS_WRITE)
 
 
-def write_post(research_data: dict) -> dict:
+def write_post(research_data: dict, rubric: str = "useful") -> dict:
     import prompts
 
     prompt = prompts.WRITE_PROMPT.format(
         research_json=json.dumps(research_data, ensure_ascii=False, indent=2),
-        style_guide=prompts.STYLE_GUIDE,
+        style_guide=prompts.style_guide(rubric),
     )
-    log.info("Post matni yozilmoqda...")
+    log.info("Post matni yozilmoqda (%s)...", rubric)
     return _json_call(prompt, temperature=0.9)
 
 
-def fix_post(post: dict, qc: dict, research_data: dict) -> dict:
+def fix_post(post: dict, qc: dict, research_data: dict,
+             rubric: str = "useful") -> dict:
     import prompts
 
     prompt = prompts.FIX_PROMPT.format(
@@ -317,7 +319,7 @@ def fix_post(post: dict, qc: dict, research_data: dict) -> dict:
         problems="\n".join(f"- {p}" for p in qc.get("problems", [])) or "- (ko'rsatilmagan)",
         fix_instructions=qc.get("fix_instructions", "Postni yaxshilang."),
         research_json=json.dumps(research_data, ensure_ascii=False, indent=2),
-        style_guide=prompts.STYLE_GUIDE,
+        style_guide=prompts.style_guide(rubric),
     )
     log.info("Post tuzatilmoqda...")
     return _json_call(prompt, temperature=0.7)

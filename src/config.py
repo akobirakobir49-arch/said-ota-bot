@@ -12,9 +12,27 @@ ADMIN_CHAT_ID = os.environ.get("ADMIN_CHAT_ID", "748753861").strip()
 CHANNEL_NAME = "Said Ota Market"
 CHANNEL_LINK = "https://t.me/Said_Ota_Market"
 
-# Har bir post oxiriga qo'shiladigan footer (kanal uslubidagi ajratuvchi chiziq bilan).
-# O'chirish uchun bo'sh qator ("") qiling.
-POST_FOOTER = "➖➖➖➖➖➖➖➖➖\n🛒 <b>Said Ota Market</b> — sifat va ishonch"
+# ---------- Post oxiridagi footer (CTA + havolalar + telefonlar) ----------
+FOOTER_DIVIDER = "➖➖➖➖➖➖➖➖➖"
+
+# Obunaga undovchi chaqiruv. Bo'sh qoldirsangiz — chiqarilmaydi.
+CTA_TEXT = "📌 Foydali bo'ldimi? Bizga obuna bo'ling 👇"
+
+# Ijtimoiy tarmoqlar: (emoji, ko'rinadigan nom, havola).
+# Nomning o'zi bosiladigan havola bo'ladi. Havolasi bo'sh bo'lganlari chiqarilmaydi.
+SOCIAL_LINKS = [
+    ("📸", "Instagram", "https://www.instagram.com/said_ota_market"),
+    ("✈️", "Telegram", "https://t.me/Said_Ota_Market"),
+    ("▶️", "YouTube", "https://youtube.com/@saidotamarket"),
+]
+SOCIAL_SEPARATOR = " | "
+
+# Aloqa telefonlari (Telegram ularni o'zi bosiladigan qiladi). Bo'sh ro'yxat = chiqmaydi.
+PHONE_EMOJI = "☎️"
+PHONE_NUMBERS = [
+    "+998701203000",
+    "+998957761929",
+]
 
 # ---------- Vaqt ----------
 TZ = ZoneInfo("Asia/Tashkent")
@@ -70,13 +88,30 @@ MIN_POST_CHARS = 300          # kanal uslubidagi postlar medianasi ~465 belgi
 MAX_POST_CHARS = 850          # Telegram rasm izohi (caption) limiti = 1024
 MAX_CONTENT_ATTEMPTS = 3      # sifat nazoratidan o'tmasa qayta yozish soni
 
+# Rubrikaga qarab uzunlik chegarasi: (minimum, maksimum) ko'rinadigan belgilar
+RUBRIC_LENGTH = {
+    "useful": (300, 850),
+    "facts": (280, 700),
+}
+
 # ---------- Fayl yo'llari ----------
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
 PENDING_DIR = os.path.join(DATA_DIR, "pending")
 
-# ---------- Rubrika: mahsulot kategoriyalari ----------
+# ---------- Rubrikalar ----------
+# Qaysi slotda qaysi rubrika chiqishi. Almashtirmoqchi bo'lsangiz shu yerni o'zgartiring.
+SLOT_RUBRIC = {
+    "morning": "useful",   # 09:00 — Foydali ma'lumotlar
+    "evening": "facts",    # 17:00 — Qiziqarli faktlar ("Bilarmidingiz?")
+}
+RUBRIC_NAMES = {
+    "useful": "Foydali ma'lumotlar",
+    "facts": "Qiziqarli faktlar",
+}
+
+# ---------- Mahsulot kategoriyalari (ikkala rubrika uchun ham) ----------
 # Agent har safar shu ro'yxatdan (yaqinda ishlatilmaganidan) bittasini tanlaydi
 CATEGORIES = [
     "Mevalar (mavsumiy va import)",
@@ -96,10 +131,16 @@ CATEGORIES = [
     "Choy va ichimliklar",
     "Konservalar va tayyor mahsulotlar",
     "Muzlatilgan mahsulotlar",
-    "Bolalar oziq-ovqati",
+    "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)",
     "Mahsulotlarni to'g'ri saqlash va muddatlar",
     "Oziq-ovqat xavfsizligi va sifatini tanlash",
 ]
+
+# Kategoriya chiqish ehtimoli. Yozilmagani = 1.0 (oddiy).
+# Kichik son = kamroq chiqadi. Masalan 0.15 ≈ 7 barobar kam.
+CATEGORY_WEIGHTS = {
+    "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)": 0.15,
+}
 
 # ---------- Rasm uslubi ----------
 IMAGE_STYLE = (

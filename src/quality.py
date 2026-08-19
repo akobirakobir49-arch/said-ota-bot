@@ -7,6 +7,9 @@ import config
 
 log = logging.getLogger("quality")
 
+# O'zbek matnida apostrof turli belgilar bilan yoziladi: ' ‘ ’ ʻ ʼ `
+APOS = "['‘’ʻʼ`´]"
+
 ALLOWED_TAGS = {"b", "strong", "i", "em", "u", "ins", "s", "strike", "del",
                 "code", "pre", "a", "tg-spoiler", "blockquote"}
 
@@ -19,16 +22,34 @@ EMOJI_START = re.compile(
 
 # Tibbiy da'volar — taqiqlangan
 MEDICAL_CLAIMS = [
-    r"\bdavola(y|ydi|ngan|sh)\b", r"\bshifo\s*bo['’]?l", r"\bsaraton(ni)?\s+yo['’]?q",
-    r"\bkasallikdan\s+xalos", r"\bdori\s+o['’]?rnini", r"\bimmunitetni\s+100",
-    r"\bbutunlay\s+yo['’]?q\s+qiladi",
+    r"\bdavola(y|ydi|ngan|sh)\b", r"\bshifo\s*bo"+APOS+"?l", r"\bsaraton(ni)?\s+yo"+APOS+"?q",
+    r"\bkasallikdan\s+xalos", r"\bdori\s+o"+APOS+"?rnini", r"\bimmunitetni\s+100",
+    r"\bbutunlay\s+yo"+APOS+"?q\s+qiladi",
 ]
 
 # To'ldirilmagan joy / shablon qoldiqlari
 PLACEHOLDERS = [r"\[[^\]]{2,40}\]", r"\{\{", r"TODO", r"Lorem ipsum", r"XXX", r"\.\.\.\s*$"]
 
 # Narx belgilari
-PRICE_PATTERNS = [r"\d[\d\s.,]*\s*(so['’]?m|sum|UZS|\$|USD)", r"narxi\s*[:—-]\s*\d"]
+PRICE_PATTERNS = [r"\d[\d\s.,]*\s*(so"+APOS+"?m|sum|UZS|\$|USD)", r"narxi\s*[:—-]\s*\d"]
+
+# Supermarket savdosiga qarshi ishlaydigan iboralar — taqiqlangan
+ANTI_COMMERCIAL = [
+    (r"\b(sotib\s+olma|xarid\s+qilma|iste"+APOS+r"?mol\s+qilma|yeb\s+bo"+APOS+r"?lma)(ng|ylik|slik)",
+     "«sotib olmang / iste'mol qilmang» turidagi chaqiriq"),
+    (r"\bvoz\s+kech(ing|ish|ing?lar)", "«voz keching» chaqirig'i"),
+    (r"\b(umuman|hech\s+qachon)\s+\w{0,12}(yema|ishlatma|olma)", "keskin taqiq chaqirig'i"),
+    (r"\b(konserva\w*|muzlatilgan\s+\w+|yarim\s*tayyor\w*|sanoat\s+\w+|do"+APOS+"?kon\s+\w+)"
+     r"[^.!?]{0,40}\b(zararli|xavfli|yomon|foydasiz|sifatsiz|zaharli)",
+     "mahsulot turini yomonlash"),
+    (r"\b(zararli|xavfli|zaharli)[^.!?]{0,40}\b(konserva\w*|qo"+APOS+"?shimcha\w*|"
+     r"konservant\w*|bo"+APOS+"?yoq\w*)", "qo'shimchalar haqida qo'rqitish"),
+    (r"\bE-?\s?\d{3}\b[^.!?]{0,50}(zarar|xavf|saraton|allergi)", "E-qo'shimchalar bilan qo'rqitish"),
+    (r"\bkimyo(viy)?\s*(ga)?\s*to"+APOS+"?la", "«kimyoga to'la» iborasi"),
+    (r"do"+APOS+"?kondan\s+olma(ng|slik)", "do'kondan chetlashtirish"),
+    (r"bozordan\s+ol(gan|ing)[^.!?]{0,30}(yaxshi|foydali|toza)", "do'konni bozorga qarama-qarshi qo'yish"),
+    (r"\buyda\s+tayyorlang[^.!?]{0,40}do"+APOS+"?kon", "do'kon mahsulotini rad etishga undash"),
+]
 
 
 def _check_html(text: str) -> list[str]:
@@ -57,22 +78,29 @@ def _visible_length(text: str) -> int:
     return len(html.unescape(re.sub(r"<[^>]+>", "", text)))
 
 
-def check_post(post: dict) -> tuple[bool, list[str]]:
+def check_post(post: dict, rubric: str = "useful") -> tuple[bool, list[str]]:
     """Dasturiy tekshiruvlar. Qaytaradi: (o'tdimi, muammolar)."""
     problems: list[str] = []
     text = (post.get("post_text") or "").strip()
+    min_chars, max_chars = config.RUBRIC_LENGTH.get(
+        rubric, (config.MIN_POST_CHARS, config.MAX_POST_CHARS))
 
     if not text:
         return False, ["Post matni bo'sh."]
 
-    # Uzunlik (Telegram caption limiti = 1024 belgi, HTML teglar bilan birga)
-    if len(text) > 1024:
-        problems.append(f"Post juda uzun: {len(text)} belgi (Telegram limiti 1024).")
+    # Uzunlik. Telegram limiti (1024) HTML teglarsiz, ko'rinadigan matnga nisbatan.
+    # Footer keyinroq qo'shilgani uchun unga joy qoldiramiz.
     vis = _visible_length(text)
-    if vis < config.MIN_POST_CHARS:
-        problems.append(f"Post juda qisqa: {vis} belgi (minimum {config.MIN_POST_CHARS}).")
-    if vis > config.MAX_POST_CHARS:
-        problems.append(f"Post uzun: {vis} belgi (maksimum {config.MAX_POST_CHARS}).")
+    footer_len = _visible_length(build_footer())
+    if vis + footer_len > 1010:
+        problems.append(
+            f"Post juda uzun: {vis} belgi + footer {footer_len} "
+            "(Telegram rasm izohi limiti 1024)."
+        )
+    if vis < min_chars:
+        problems.append(f"Post juda qisqa: {vis} belgi (minimum {min_chars}).")
+    if vis > max_chars:
+        problems.append(f"Post uzun: {vis} belgi (maksimum {max_chars}).")
 
     # HTML to'g'riligi
     problems += _check_html(text)
@@ -136,6 +164,14 @@ def check_post(post: dict) -> tuple[bool, list[str]]:
         if re.search(pat, low):
             problems.append("Matnda narx ko'rsatilgan — bu taqiqlangan.")
             break
+    for pat, nom in ANTI_COMMERCIAL:
+        if re.search(pat, low):
+            problems.append(f"Supermarket savdosiga qarshi ishlaydi: {nom}.")
+            break
+
+    # "Bilarmidingiz?" rubrikasi uchun qo'shimcha tekshiruv
+    if rubric == "facts" and "bilarmidingiz" not in low:
+        problems.append("Sarlavhada «Bilarmidingiz?» yo'q.")
 
     # Quiz
     quiz = post.get("quiz") or {}
@@ -167,11 +203,31 @@ def check_post(post: dict) -> tuple[bool, list[str]]:
     return (len(problems) == 0), problems
 
 
+def build_footer() -> str:
+    """Ajratuvchi chiziq + CTA + ijtimoiy tarmoq havolalari + telefonlar."""
+    lines = [config.FOOTER_DIVIDER]
+    if config.CTA_TEXT:
+        lines.append(config.CTA_TEXT)
+
+    links = [f'{emoji} <a href="{html.escape(url, quote=True)}">{name}</a>'
+             for emoji, name, url in config.SOCIAL_LINKS if url.strip()]
+    if links:
+        lines.append(config.SOCIAL_SEPARATOR.join(links))
+
+    phones = [p.strip() for p in config.PHONE_NUMBERS if p.strip()]
+    if phones:
+        lines.append("")
+        for i, p in enumerate(phones):
+            lines.append(f"{config.PHONE_EMOJI} {p}" if i == 0 else f"{p}")
+
+    return "\n".join(lines).strip()
+
+
 def ensure_footer(text: str) -> str:
     """Kanal footerini qo'shadi (agar hali qo'shilmagan bo'lsa)."""
-    footer = (config.POST_FOOTER or "").strip()
+    footer = build_footer()
     if not footer:
         return text.strip()
-    if config.CHANNEL_NAME in text and "➖➖" in text:
+    if config.FOOTER_DIVIDER in text:
         return text.strip()
     return text.strip() + "\n\n" + footer

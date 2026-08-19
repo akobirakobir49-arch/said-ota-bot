@@ -25,23 +25,26 @@ MONTHS_UZ = ["yanvar", "fevral", "mart", "aprel", "may", "iyun",
 
 
 # ---------------------------------------------------------------- kontent
-def build_content() -> tuple[dict, dict, dict]:
+def build_content(rubric: str = "useful") -> tuple[dict, dict, dict]:
     """Tadqiqot -> post -> sifat nazorati sikli. Qaytaradi (post, research, qc)."""
     category = history.pick_category()
     now = datetime.now(config.TZ)
+    log.info("Rubrika: %s (%s)", rubric, config.RUBRIC_NAMES.get(rubric, rubric))
     research = gemini_api.research(
         category=category,
         month_name=MONTHS_UZ[now.month - 1],
         recent_topics=history.recent_topics(),
+        rubric=rubric,
     )
 
-    post = gemini_api.write_post(research)
+    post = gemini_api.write_post(research, rubric=rubric)
+    post["_rubric"] = rubric
     post["_category"] = category
     post["_topic"] = research.get("topic", "")
     last_qc: dict = {}
 
     for attempt in range(1, config.MAX_CONTENT_ATTEMPTS + 1):
-        ok, problems = quality.check_post(post)
+        ok, problems = quality.check_post(post, rubric=rubric)
         if not ok:
             log.warning("Dasturiy tekshiruv muammolari (%s-urinish): %s", attempt, problems)
             if attempt == config.MAX_CONTENT_ATTEMPTS:
@@ -54,8 +57,10 @@ def build_content() -> tuple[dict, dict, dict]:
                  "fix_instructions": "Yuqoridagi texnik muammolarni bartaraf eting. "
                                      "Uzunlik va Telegram HTML qoidalariga qat'iy amal qiling."},
                 research,
+                rubric=rubric,
             )
             fixed["_category"], fixed["_topic"] = category, research.get("topic", "")
+            fixed["_rubric"] = rubric
             post = fixed
             continue
 
@@ -67,8 +72,9 @@ def build_content() -> tuple[dict, dict, dict]:
         if attempt == config.MAX_CONTENT_ATTEMPTS:
             log.warning("Sifat nazorati %s urinishdan keyin ham PASS bo'lmadi.", attempt)
             break
-        fixed = gemini_api.fix_post(post, qc, research)
+        fixed = gemini_api.fix_post(post, qc, research, rubric=rubric)
         fixed["_category"], fixed["_topic"] = category, research.get("topic", "")
+        fixed["_rubric"] = rubric
         post = fixed
 
     post["post_text"] = quality.ensure_footer(post["post_text"])
@@ -89,6 +95,7 @@ def send_preview(post: dict, image: bytes | None, qc: dict, token: str,
 
     header = (
         f"🧾 <b>PREVIEW</b> · {round_no}-variant\n"
+        f"🗂 {config.RUBRIC_NAMES.get(post.get('_rubric', 'useful'), '-')}\n"
         f"📂 {post.get('_category', '-')}\n"
         f"🕒 Chiqish vaqti: <b>{publish_at.strftime('%H:%M')}</b>\n"
         f"✅ Sifat nazorati: {qc.get('verdict', '-')} ({qc.get('score', '-')}/100)\n"
@@ -165,7 +172,8 @@ def main() -> int:
 
     offset = tg.drop_pending_updates()
 
-    post, research, qc = build_content()
+    rubric = config.SLOT_RUBRIC.get(args.slot, "useful")
+    post, research, qc = build_content(rubric)
     image = make_image(post)
     post["_poll_time"] = (publish_at + timedelta(hours=args.poll_after)).strftime("%H:%M")
 
@@ -191,7 +199,7 @@ def main() -> int:
                         f"♻️ <b>{round_no}-variant</b> tayyorlanmoqda, biroz kuting...",
                         raise_on_error=False)
         try:
-            post, research, qc = build_content()
+            post, research, qc = build_content(rubric)
             image = make_image(post)
             post["_poll_time"] = (publish_at + timedelta(hours=args.poll_after)).strftime("%H:%M")
         except Exception as e:  # noqa: BLE001
@@ -231,6 +239,7 @@ def main() -> int:
     tg.send_message(
         config.ADMIN_CHAT_ID,
         f"✅ <b>Post kanalga chiqarildi</b>\n"
+        f"🗂 {config.RUBRIC_NAMES.get(post.get('_rubric', 'useful'), '-')}\n"
         f"📂 {post.get('_category', '-')}\n"
         f"📝 {post.get('_topic', '-')}\n"
         f"❓ Test savoli soat {post.get('_poll_time', '—')} da chiqadi.",

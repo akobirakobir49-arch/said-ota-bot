@@ -57,10 +57,14 @@ def recent_topics(limit: int = RECENT_FOR_PROMPT) -> list[str]:
 
 
 def pick_category() -> str:
-    """Yaqinda ishlatilmagan kategoriyalardan tasodifiy bittasini tanlaydi."""
+    """Yaqinda ishlatilmagan kategoriyalardan tanlaydi (og'irliklarni hisobga olib)."""
     used = {e.get("category") for e in load()[-CATEGORY_COOLDOWN:]}
     pool = [c for c in config.CATEGORIES if c not in used] or list(config.CATEGORIES)
-    choice = random.choice(pool)
+    weights = [max(0.0, float(getattr(config, "CATEGORY_WEIGHTS", {}).get(c, 1.0)))
+               for c in pool]
+    if sum(weights) <= 0:
+        weights = [1.0] * len(pool)
+    choice = random.choices(pool, weights=weights, k=1)[0]
     log.info("Tanlangan kategoriya: %s", choice)
     return choice
 
