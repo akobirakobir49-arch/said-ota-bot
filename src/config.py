@@ -28,9 +28,30 @@ REGEN_WAIT_MINUTES = 12
 MAX_REGENERATIONS = 3
 
 # ---------- Gemini modellari ----------
-TEXT_MODEL = "gemini-2.5-flash"
-IMAGE_MODEL = "gemini-2.5-flash-image"
-GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
+# "auto" = tizim Google'dan mavjud modellar ro'yxatini so'rab, eng mosini o'zi tanlaydi.
+# Aniq model nomini yozsangiz (masalan "gemini-3.6-flash"), aynan o'sha ishlatiladi.
+TEXT_MODEL = "auto"
+IMAGE_MODEL = "auto"
+
+GEMINI_API = "https://generativelanguage.googleapis.com/v1beta"
+GEMINI_BASE = GEMINI_API + "/models"
+GEMINI_INTERACTIONS = GEMINI_API + "/interactions"
+
+# Avtomatik tanlashda ustuvorlik tartibi (yuqoridagisi birinchi sinaladi).
+# Ro'yxatdagilarning hech biri mavjud bo'lmasa, tizim mos keladigan boshqasini topadi.
+TEXT_MODEL_PREFERENCE = [
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
+    "gemini-3.5-flash",
+    "gemini-3-flash",
+    "gemini-2.5-flash",
+]
+IMAGE_MODEL_PREFERENCE = [
+    "gemini-3.1-flash-image",
+    "gemini-3.1-flash-lite-image",
+    "gemini-3-pro-image",
+    "gemini-2.5-flash-image",
+]
 
 # ---------- Sifat nazorati chegaralari ----------
 MIN_POST_CHARS = 300          # kanal uslubidagi postlar medianasi ~465 belgi

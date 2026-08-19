@@ -64,10 +64,19 @@ def check_admin():
     print(f"Adminga ({config.ADMIN_CHAT_ID}) test xabari yuborildi.")
 
 
-def check_gemini_text():
+def check_gemini_models():
     if not config.GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY secret to'ldirilmagan.")
-    resp = gemini_api._post(config.TEXT_MODEL, {
+    models = sorted(gemini_api._short(m.get("name", "")) for m in gemini_api.list_models())
+    print(f"Kalit uchun mavjud modellar ({len(models)} ta):")
+    for m in models:
+        print("   ", m)
+    print("\n➡️  Tanlangan MATN modeli :", gemini_api.text_model())
+    print("➡️  Tanlangan RASM modeli :", gemini_api.image_model())
+
+
+def check_gemini_text():
+    resp = gemini_api._post(gemini_api.text_model(), {
         "contents": [{"role": "user", "parts": [{"text": "Javob sifatida faqat 'ishladi' deb yoz."}]}],
         "generationConfig": {"maxOutputTokens": 20},
     })
@@ -75,7 +84,7 @@ def check_gemini_text():
 
 
 def check_gemini_search():
-    resp = gemini_api._post(config.TEXT_MODEL, {
+    resp = gemini_api._post(gemini_api.text_model(), {
         "contents": [{"role": "user", "parts": [{"text": "Bugun O'zbekistonda qaysi mevalar mavsumda? Qisqa javob."}]}],
         "tools": [{"google_search": {}}],
         "generationConfig": {"maxOutputTokens": 300},
@@ -102,9 +111,10 @@ if __name__ == "__main__":
     step("1. Telegram bot tokeni", check_token)
     step("2. Kanal va bot huquqlari", check_channel)
     step("3. Admin bilan aloqa", check_admin)
-    step("4. Gemini matn modeli", check_gemini_text)
-    step("5. Gemini Google Search", check_gemini_search)
-    step("6. Gemini rasm generatsiyasi (nanobanana)", check_gemini_image)
+    step("4. Gemini modellari ro'yxati", check_gemini_models)
+    step("5. Gemini matn modeli", check_gemini_text)
+    step("6. Gemini Google Search", check_gemini_search)
+    step("7. Gemini rasm generatsiyasi (nanobanana)", check_gemini_image)
 
     print("\n" + "=" * 40)
     print("✅ BARCHA TEKSHIRUVLAR MUVAFFAQIYATLI" if ok_all else "❌ BA'ZI TEKSHIRUVLAR XATO BERDI")
