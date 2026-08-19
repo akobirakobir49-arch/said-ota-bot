@@ -53,6 +53,18 @@ IMAGE_MODEL_PREFERENCE = [
     "gemini-2.5-flash-image",
 ]
 
+# Gemini 3 modellari javob berishdan oldin "o'ylaydi" va o'ylash ham token sarflaydi.
+# "minimal" | "low" | "medium" | "high" | None (o'chirish).
+# Model bu parametrni qo'llamasa, tizim uni avtomatik olib tashlaydi.
+THINKING_LEVEL = "low"
+
+# Javob uchun token chegaralari. O'ylash tokenlari ham shu hisobga kirgani uchun
+# katta qo'yilgan — aks holda JSON javob yarmida uzilib qoladi.
+MAX_TOKENS_RESEARCH = 32768
+MAX_TOKENS_WRITE = 16384
+MAX_TOKENS_QC = 8192
+JSON_RETRY_ATTEMPTS = 3      # JSON buzilsa necha marta qayta so'raladi
+
 # ---------- Sifat nazorati chegaralari ----------
 MIN_POST_CHARS = 300          # kanal uslubidagi postlar medianasi ~465 belgi
 MAX_POST_CHARS = 850          # Telegram rasm izohi (caption) limiti = 1024

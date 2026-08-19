@@ -1,5 +1,6 @@
 """Gemini API bilan ishlash: mavzu qidirish, matn yozish, rasm generatsiya qilish."""
 import base64
+import copy
 import json
 import logging
 import re
@@ -169,13 +170,18 @@ def _collect_text(resp: dict) -> str:
 
 
 def _extract_json(text: str) -> dict:
-    """Model javobidan JSON obyektini ajratib oladi (```json bloklarini ham qo'llaydi)."""
+    """Model javobidan JSON obyektini ajratib oladi (```json bloklari va yopilmagan
+    kodblok bilan ham ishlaydi)."""
     if not text:
         raise GeminiError("Gemini bo'sh javob qaytardi")
 
-    # ```json ... ``` blokini tozalaymiz
+    # ```json ... ``` blokini tozalaymiz (yopilmagan bo'lsa ham)
     fence = re.search(r"```(?:json)?\s*(.+?)```", text, re.DOTALL)
-    candidate = fence.group(1).strip() if fence else text.strip()
+    if fence:
+        candidate = fence.group(1).strip()
+    else:
+        open_fence = re.search(r"```(?:json)?\s*(.+)$", text, re.DOTALL)
+        candidate = (open_fence.group(1) if open_fence else text).strip()
 
     try:
         return json.loads(candidate)
@@ -190,7 +196,67 @@ def _extract_json(text: str) -> dict:
         except json.JSONDecodeError:
             pass
 
-    raise GeminiError(f"JSON o'qib bo'lmadi. Javob boshi: {text[:400]}")
+    if start != -1 and "}" not in candidate[start:]:
+        raise GeminiError(
+            "Javob yarmida uzilib qolgan (JSON tugamagan). "
+            f"Uzunligi: {len(text)} belgi. Boshi: {text[:200]}"
+        )
+    raise GeminiError(f"JSON o'qib bo'lmadi. Javob boshi: {text[:300]}")
+
+
+def _finish_reason(resp: dict) -> str:
+    for cand in resp.get("candidates", []):
+        if cand.get("finishReason"):
+            return str(cand["finishReason"])
+    return ""
+
+
+def _gen(payload: dict, timeout: int = 180) -> dict:
+    """generateContent + o'ylash darajasi (model qo'llamasa avtomatik olib tashlanadi)."""
+    p = copy.deepcopy(payload)
+    gc = p.setdefault("generationConfig", {})
+    if config.THINKING_LEVEL and "thinkingLevel" not in gc:
+        gc["thinkingLevel"] = config.THINKING_LEVEL
+    try:
+        return _post(text_model(), p, timeout)
+    except GeminiError as e:
+        msg = str(e).lower()
+        if "thinking" in msg or "unknown name" in msg or "invalid json payload" in msg:
+            log.warning("Model 'thinkingLevel' ni qo'llamadi — usiz qayta yuborilmoqda.")
+            gc.pop("thinkingLevel", None)
+            return _post(text_model(), p, timeout)
+        raise
+
+
+def _json_generate(payload: dict, max_tokens: int, timeout: int = 180) -> dict:
+    """JSON javob so'raydi. Javob uzilib qolsa yoki buzilsa — chegarani oshirib qayta so'raydi."""
+    budget = max_tokens
+    last_err: Exception | None = None
+    for attempt in range(1, config.JSON_RETRY_ATTEMPTS + 1):
+        p = copy.deepcopy(payload)
+        p.setdefault("generationConfig", {})["maxOutputTokens"] = budget
+        resp = _gen(p, timeout)
+        text = _collect_text(resp)
+        reason = _finish_reason(resp)
+
+        if reason.upper() in ("MAX_TOKENS", "MAX_TOKEN", "LENGTH") or not text:
+            log.warning("Javob uzilib qoldi (sabab: %s, %s belgi) — chegara oshirilmoqda "
+                        "(urinish %s/%s).", reason or "bo'sh", len(text), attempt,
+                        config.JSON_RETRY_ATTEMPTS)
+            last_err = GeminiError(f"Javob tugallanmadi (finishReason={reason})")
+            budget = min(budget * 2, 65536)
+            continue
+
+        try:
+            return _extract_json(text)
+        except GeminiError as e:
+            last_err = e
+            log.warning("JSON o'qilmadi (urinish %s/%s): %s", attempt,
+                        config.JSON_RETRY_ATTEMPTS, str(e)[:200])
+            budget = min(int(budget * 1.5), 65536)
+
+    raise GeminiError(f"JSON javob {config.JSON_RETRY_ATTEMPTS} urinishda ham olinmadi. "
+                      f"Oxirgi xato: {last_err}")
 
 
 # ------------------------------------------------------------------
@@ -206,11 +272,10 @@ def research(category: str, month_name: str, recent_topics: list[str]) -> dict:
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "tools": [{"google_search": {}}],
-        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 4096},
+        "generationConfig": {"temperature": 0.9},
     }
     log.info("Mavzu qidirilmoqda: %s", category)
-    resp = _post(text_model(), payload)
-    data = _extract_json(_collect_text(resp))
+    data = _json_generate(payload, config.MAX_TOKENS_RESEARCH, timeout=240)
 
     if not data.get("topic") or not data.get("facts"):
         raise GeminiError(f"Tadqiqot natijasi to'liq emas: {data}")
@@ -221,17 +286,16 @@ def research(category: str, month_name: str, recent_topics: list[str]) -> dict:
 # ------------------------------------------------------------------
 # 2) Post matnini yozish
 # ------------------------------------------------------------------
-def _json_call(prompt: str, temperature: float = 0.85) -> dict:
+def _json_call(prompt: str, temperature: float = 0.85,
+               max_tokens: int | None = None) -> dict:
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {
             "temperature": temperature,
-            "maxOutputTokens": 4096,
             "responseMimeType": "application/json",
         },
     }
-    resp = _post(text_model(), payload)
-    return _extract_json(_collect_text(resp))
+    return _json_generate(payload, max_tokens or config.MAX_TOKENS_WRITE)
 
 
 def write_post(research_data: dict) -> dict:
@@ -271,7 +335,7 @@ def quality_check(post_text: str, research_data: dict) -> dict:
     )
     log.info("Sifat nazorati (LLM) o'tkazilmoqda...")
     try:
-        result = _json_call(prompt, temperature=0.2)
+        result = _json_call(prompt, temperature=0.2, max_tokens=config.MAX_TOKENS_QC)
     except GeminiError as e:
         # Judge ishlamasa postni bloklamaymiz, faqat ogohlantiramiz
         log.warning("LLM sifat nazorati bajarilmadi: %s", e)
