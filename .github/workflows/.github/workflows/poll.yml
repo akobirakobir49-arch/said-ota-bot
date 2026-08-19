@@ -1,0 +1,73 @@
+name: Test savolini yuborish
+
+on:
+  schedule:
+    - cron: "0 10 * * *"    # 15:00 Toshkent — ertalabki post + 6 soat
+    - cron: "0 15 * * *"    # 20:00 Toshkent — kechqurungi post + 3 soat
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Qaysi slot"
+        required: true
+        default: "morning"
+        type: choice
+        options: [morning, evening]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: said-ota-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Kutubxonalarni o'rnatish
+        run: pip install -r requirements.txt
+
+      - name: Slotni aniqlash
+        id: cfg
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          IN_SLOT: ${{ inputs.slot }}
+        run: |
+          if [ -n "$SCHEDULE" ]; then
+            if [ "$SCHEDULE" = "0 10 * * *" ]; then SLOT=morning; else SLOT=evening; fi
+          else
+            SLOT="${IN_SLOT:-morning}"
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "Slot=$SLOT"
+
+      - name: Test savolini yuborish
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+          PYTHONUNBUFFERED: "1"
+        run: python src/send_poll.py --slot "${{ steps.cfg.outputs.slot }}"
+
+      - name: Holatni saqlash
+        if: always()
+        run: |
+          git config user.name  "said-ota-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ || true
+          if git diff --staged --quiet; then echo "O'zgarish yo'q."; exit 0; fi
+          git commit -m "chore: test savoli yuborildi (${{ steps.cfg.outputs.slot }})"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1
