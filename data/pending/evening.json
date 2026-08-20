@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 751,
+  "topic": "Fransuz bageti",
+  "category": "Un va non mahsulotlari",
+  "published_at": "2026-08-20T17:00:02+05:00",
+  "quiz": {
+    "question": "An'anaviy fransuz bageti tarkibida qat'iy qonun bo'yicha nechta masalliq bo'lishi kerak?",
+    "options": [
+      "3 ta",
+      "4 ta",
+      "5 ta",
+      "6 ta"
+    ],
+    "correct_index": 1,
+    "explanation": "Fransiyaning 'Décret Pain' qonuniga ko'ra, an'anaviy baget tarkibida FAQAT 4 ta masalliq bo'lishi shart: un, suv, tuz va xamirturush."
+  }
+}
