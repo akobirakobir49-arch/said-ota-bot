@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 748,
+  "topic": "Nega xom tovuq go'shtini jo'mrakda yuvish xavfli: Avgust issig'ida oshxona xavfsizligi",
+  "category": "Tovuq go'shti va parranda",
+  "published_at": "2026-08-20T09:05:18+05:00",
+  "quiz": {
+    "question": "Xom tovuq go‘shtidagi zararli bakteriyalarni yo‘qotishning yagona ishonchli usuli qaysi?",
+    "options": [
+      "Uni sirka yoki limonli suvda chayish",
+      "Jo‘mrak ostida kuchli bosimda yuvish",
+      "Go‘sht ichki haroratini kamida 74-75°C ga yetkazib pishirish",
+      "Muzxonada bir necha soat ushlab turish"
+    ],
+    "correct_index": 2,
+    "explanation": "Suv va kislotali eritmalar bakteriyalarni o‘ldirmaydi. Ularni faqat 74-75°C dan yuqori issiqlik harorati to‘liq zararsizlantiradi."
+  }
+}
