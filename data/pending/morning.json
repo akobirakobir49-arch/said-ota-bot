@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 754,
+  "topic": "Avgust issig'ida kesilgan tarvuz va qovunni to'g'ri saqlash",
+  "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+  "published_at": "2026-08-21T09:08:31+05:00",
+  "quiz": {
+    "question": "32°C dan yuqori issiqda kesilgan tarvuz xona haroratida ko'pi bilan qancha vaqt qolishi mumkin?",
+    "options": [
+      "1 soat",
+      "2 soat",
+      "3 soat",
+      "5 soat"
+    ],
+    "correct_index": 0,
+    "explanation": "32°C va undan yuqori issiq haroratda kesilgan tarvuz va qovunda bakteriyalar jadal ko'payadi, shu sababli uni 1 soatdan ortiq xonada qoldirib bo'lmaydi."
+  }
+}
