@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 761,
+  "topic": "Qo'y go'shti yog'ining erish xususiyati va avgust shashligini xavfsiz pishirish ilmi",
+  "category": "Qo'y go'shti",
+  "published_at": "2026-08-22T09:02:46+05:00",
+  "quiz": {
+    "question": "Go‘shtni pishirishdan oldin piyoz suvi yoki sirka bilan 30 daqiqa marinadlash nimaga yordam beradi?",
+    "options": [
+      "Go‘sht tarkibidagi yog‘ miqdorini nolga tushirishga",
+      "Yuqori haroratda zararli moddalar hosil bo‘lishini 70-90% ga kamaytirishga",
+      "Dumba yog‘ining erish haroratini oshirishga",
+      "Go‘shtdagi B12 vitaminini 2 baravarga ko‘paytirishga"
+    ],
+    "correct_index": 1,
+    "explanation": "Tadqiqotlarga ko‘ra, kislotali masalliqlar va ziravorlar bilan marinadlash yuqori haroratda saraton chaqiruvchi HCA moddalari hosil bo‘lishini 70% dan 90% gacha kamaytiradi."
+  }
+}
