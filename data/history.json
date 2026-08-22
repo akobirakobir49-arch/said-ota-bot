@@ -38,5 +38,13 @@
     "topic": "Qo'y go'shti yog'ining erish xususiyati va avgust shashligini xavfsiz pishirish ilmi",
     "title": "Avgust shashligi va hazm ilmi",
     "message_id": 761
+  },
+  {
+    "datetime": "2026-08-22T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Asal va tabiiy shirinliklar",
+    "topic": "Tabiiy asal va uning hayratli sirlari",
+    "title": "Asal haqida 4 ta hayratlanarli fakt",
+    "message_id": 764
   }
 ]

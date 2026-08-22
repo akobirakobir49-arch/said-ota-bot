@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 764,
+  "topic": "Tabiiy asal va uning hayratli sirlari",
+  "category": "Asal va tabiiy shirinliklar",
+  "published_at": "2026-08-22T17:00:01+05:00",
+  "quiz": {
+    "question": "1 kg asal ishlab chiqarish uchun asalarilar taxminan nechta gulga qo‘nishi kerak?",
+    "options": [
+      "100 mingta",
+      "500 mingta",
+      "1 millionta",
+      "4 milliondan ortiq"
+    ],
+    "correct_index": 3,
+    "explanation": "1 kg asal uchun asalarilar galasi 4 milliondan ortiq gulga qo‘nishi va 150 000 km ga yaqin masofani uchib o‘tishi kerak."
+  }
+}
