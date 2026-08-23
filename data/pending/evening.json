@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 771,
+  "topic": "Pomidor",
+  "category": "Sabzavotlar va ko'katlar",
+  "published_at": "2026-08-23T17:00:02+05:00",
+  "quiz": {
+    "question": "1893-yilda AQSh Oliy sudi pomidor bo‘yicha qanday qaror qabul qilgan?",
+    "options": [
+      "Uni zaharli mahsulot deb e'lon qilgan",
+      "Uni meva emas, rasman sabzavot deb topgan",
+      "Uni dorivor o‘simliklar ro‘yxatiga kiritgan",
+      "Uni mamlakatga olib kirishni taqiqlagan"
+    ],
+    "correct_index": 1,
+    "explanation": "Botanik jihatdan meva bo‘lsa ham, sud pomidorning asosiy taomlar bilan tortilishini inobatga olib, uni sabzavot deb e'lon qilgan."
+  }
+}
