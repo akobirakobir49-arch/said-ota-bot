@@ -46,5 +46,13 @@
     "topic": "Tabiiy asal va uning hayratli sirlari",
     "title": "Asal haqida 4 ta hayratlanarli fakt",
     "message_id": 764
+  },
+  {
+    "datetime": "2026-08-23T09:07:46+05:00",
+    "slot": "morning",
+    "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+    "topic": "Avgust issig'ida tuxumni yuvish xatosi va yangiligini tanlash ilmi",
+    "title": "Tuxumni to'g'ri saqlash va yuvish qoidalari",
+    "message_id": 767
   }
 ]
