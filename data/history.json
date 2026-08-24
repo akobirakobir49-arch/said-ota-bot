@@ -62,5 +62,13 @@
     "topic": "Pomidor",
     "title": "Pomidor haqida 4 ta hayratlanarli fakt",
     "message_id": 771
+  },
+  {
+    "datetime": "2026-08-24T09:12:32+05:00",
+    "slot": "morning",
+    "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+    "topic": "Pasterizatsiyalangan sutni qayta qaynatish xatosi va avgust issig'ida sut xavfsizligi",
+    "title": "Do'kon sutini qayta qaynatish xatosi",
+    "message_id": 774
   }
 ]

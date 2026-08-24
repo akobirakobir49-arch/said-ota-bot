@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 774,
+  "topic": "Pasterizatsiyalangan sutni qayta qaynatish xatosi va avgust issig'ida sut xavfsizligi",
+  "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+  "published_at": "2026-08-24T09:12:32+05:00",
+  "quiz": {
+    "question": "Pasterizatsiyalangan do'kon sutini 100°C da qaynatganda qaysi vitamin 75% gacha yo'qolishi mumkin?",
+    "options": [
+      "B12 vitamini",
+      "C vitamini",
+      "D vitamini",
+      "A vitamini"
+    ],
+    "correct_index": 0,
+    "explanation": "Tadqiqotlarga ko'ra, pasterizatsiyalangan sutni qayta 100°C da qaynatish undagi B12 va boshqa B guruhi vitaminlarini 75% gacha parchalab yuboradi."
+  }
+}
