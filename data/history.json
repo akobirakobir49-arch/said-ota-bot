@@ -70,5 +70,13 @@
     "topic": "Pasterizatsiyalangan sutni qayta qaynatish xatosi va avgust issig'ida sut xavfsizligi",
     "title": "Do'kon sutini qayta qaynatish xatosi",
     "message_id": 774
+  },
+  {
+    "datetime": "2026-08-24T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "Tovuqlarning kelib chiqishi va hayratli biologik sirlari",
+    "title": "Tovuqlar haqida hayratlanarli faktlar",
+    "message_id": 777
   }
 ]
