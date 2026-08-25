@@ -78,5 +78,13 @@
     "topic": "Tovuqlarning kelib chiqishi va hayratli biologik sirlari",
     "title": "Tovuqlar haqida hayratlanarli faktlar",
     "message_id": 777
+  },
+  {
+    "datetime": "2026-08-25T09:06:31+05:00",
+    "slot": "morning",
+    "category": "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)",
+    "topic": "Avgust issig'ida bolalar sutli aralashmasi (suxoy smes) va uni saqlash hamda tayyorlash xavfsizligi",
+    "title": "Avgust issig'ida bolalar smesini saqlash qoidalari",
+    "message_id": 780
   }
 ]

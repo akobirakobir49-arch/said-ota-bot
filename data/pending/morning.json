@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 780,
+  "topic": "Avgust issig'ida bolalar sutli aralashmasi (suxoy smes) va uni saqlash hamda tayyorlash xavfsizligi",
+  "category": "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)",
+  "published_at": "2026-08-25T09:06:31+05:00",
+  "quiz": {
+    "question": "Ochilgan quruq bolalar sutli aralashmasini (smes) qayerda va qancha vaqt saqlash to‘g‘ri bo‘ladi?",
+    "options": [
+      "Muzlatgich ichida 2 oy davomida",
+      "Salqin va quruq joyda ko‘pi bilan 30 kun",
+      "Muzlatgichning pastki javonida 60 kun",
+      "Ochiq quyosh tushadigan joyda 15 kun"
+    ],
+    "correct_index": 1,
+    "explanation": "Quruq smesni muzlatgichga qo‘yish mumkin emas, nam tortib qoladi. Uni salqin va quruq joyda ko‘pi bilan 30 kun saqlash kerak."
+  }
+}
