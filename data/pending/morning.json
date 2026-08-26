@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 787,
+  "topic": "Avgust issig'ida yorma va dukkaklilarda qurt paydo bo'lishining oldini olish",
+  "category": "Yormalar va dukkaklilar (guruch, grechka, no'xat, loviya)",
+  "published_at": "2026-08-26T09:09:31+05:00",
+  "quiz": {
+    "question": "Yorma va dukkaklilardagi zararkunanda tuxumlarini 100% yo'q qilish uchun necha daraja sovuqda ushlash kerak?",
+    "options": [
+      "0°C haroratda 12 soat",
+      "-5°C haroratda 24 soat",
+      "-18°C haroratda 48 soat",
+      "+15°C haroratda 3 kun"
+    ],
+    "correct_index": 2,
+    "explanation": "Mahsulotni -18°C muzlatgich kamerasida 48–72 soat saqlash don ichida yashiringan 100% tuxum va lichinkalarni to'liq yo'q qiladi."
+  }
+}
