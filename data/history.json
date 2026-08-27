@@ -110,5 +110,13 @@
     "topic": "Tuxum haqida hayratli va kutilmagan sirlar",
     "title": "Tuxum haqida 4 ta hayratlanarli fakt",
     "message_id": 790
+  },
+  {
+    "datetime": "2026-08-27T19:19:56+05:00",
+    "slot": "morning",
+    "category": "Qo'y go'shti",
+    "topic": "Yangi so'yilgan issiq qo'y go'shti va muskul qotishi (rigor mortis) ilmi",
+    "title": "Yangi so'yilgan go'sht va muskul qotishi",
+    "message_id": 794
   }
 ]
