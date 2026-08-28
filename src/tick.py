@@ -98,7 +98,8 @@ def main() -> int:
     if entry is not None:
         did_something = True
         try:
-            publish.run_slot(entry, dry_run=args.dry_run)
+            publish.run_slot(entry, dry_run=args.dry_run,
+                             force=bool(args.force_slot))
         except Exception as exc:  # noqa: BLE001
             log.exception("Postni chiqarishda xato")
             tg.send_message(

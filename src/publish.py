@@ -150,7 +150,7 @@ def publish(post: dict, image: bytes | None) -> int | None:
 
 
 # ---------------------------------------------------------------- slotni bajarish
-def run_slot(entry: dict, dry_run: bool = False) -> bool:
+def run_slot(entry: dict, dry_run: bool = False, force: bool = False) -> bool:
     """Bitta slotni to'liq bajaradi. Muvaffaqiyatli bo'lsa True."""
     slot = entry["slot"]
     rubric = entry.get("rubric", "useful")
@@ -160,8 +160,12 @@ def run_slot(entry: dict, dry_run: bool = False) -> bool:
     hh, mm = (int(x) for x in entry["publish_at"].split(":"))
     target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
 
-    # Kechikib ishga tushgan bo'lsak, adminga baribir qisqa vaqt beramiz
-    if now < target:
+    # Qo'lda ishga tushirilgan bo'lsa jadvalni kutmaymiz
+    if force:
+        deadline = now + timedelta(minutes=config.FORCE_RUN_WAIT_MINUTES)
+        log.info("Qo'lda ishga tushirildi — adminga %s daqiqa beriladi.",
+                 config.FORCE_RUN_WAIT_MINUTES)
+    elif now < target:
         deadline = target
     else:
         deadline = now + timedelta(minutes=config.LATE_START_GRACE_MINUTES)
@@ -257,7 +261,7 @@ def main() -> int:
 
     config.validate()
     entry = next(e for e in config.POST_SCHEDULE if e["slot"] == args.slot)
-    run_slot(entry, dry_run=args.dry_run)
+    run_slot(entry, dry_run=args.dry_run, force=True)
     return 0
 
 

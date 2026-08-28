@@ -50,6 +50,8 @@ POST_SCHEDULE = [
 PREVIEW_LEAD_MINUTES = 30
 # Tizim kechikib ishga tushgan bo'lsa, adminga kamida shuncha daqiqa beriladi
 LATE_START_GRACE_MINUTES = 12
+# Qo'lda (Run workflow orqali) ishga tushirilganda kutish vaqti
+FORCE_RUN_WAIT_MINUTES = 5
 # Belgilangan vaqtdan shuncha soat o'tib ketgan bo'lsa — post umuman chiqarilmaydi
 SKIP_IF_LATER_THAN_HOURS = 4
 # Poll o'z vaqtidan shuncha soat kechiksa — yuborilmaydi (eskirgan)
