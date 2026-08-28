@@ -1,0 +1,78 @@
+name: Tekshiruv (har 15 daqiqada)
+
+# GitHub cron kafolat bermaydi — ishlar soatlab kechikishi mumkin.
+# Shuning uchun tizim vaqtni kutmaydi: har 15 daqiqada "nima qilish kerak?" deb
+# tekshiradi va bajarilmagan ishni bajaradi. Bo'sh tekshiruv ~25 soniya oladi.
+on:
+  schedule:
+    - cron: "3,18,33,48 * * * *"
+  workflow_dispatch:
+    inputs:
+      force_slot:
+        description: "Jadvalga qaramasdan shu slotni bajarish (bo'sh = odatdagi tekshiruv)"
+        required: false
+        default: ""
+        type: choice
+        options: ["", "morning", "evening"]
+      dry_run:
+        description: "Sinov rejimi (kanalga chiqarmaydi)"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: said-ota-tick
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Kutubxonalarni o'rnatish
+        run: pip install -r requirements.txt
+
+      - name: Tekshiruv va bajarish
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.force_slot }}" ]; then
+            ARGS="--force-slot ${{ inputs.force_slot }}"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          python src/tick.py $ARGS
+
+      - name: Holatni saqlash
+        if: always()
+        run: |
+          git config user.name  "said-ota-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ || true
+          if git diff --staged --quiet; then
+            echo "O'zgarish yo'q."
+            exit 0
+          fi
+          git commit -m "chore: holat yangilandi"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "Push urinishi $i muvaffaqiyatsiz, qayta urinilmoqda..."
+            sleep 5
+          done
+          exit 1
