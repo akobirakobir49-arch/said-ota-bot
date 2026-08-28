@@ -97,3 +97,37 @@ def clear_pending(slot: str) -> None:
     path = pending_path(slot)
     if os.path.exists(path):
         os.remove(path)
+
+
+# ---------- Kunlik holat (qaysi slot bajarilgan) ----------
+def load_state() -> dict:
+    _ensure_dirs()
+    if not os.path.exists(config.STATE_FILE):
+        return {}
+    try:
+        with open(config.STATE_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except (json.JSONDecodeError, OSError) as e:
+        log.warning("Holat faylini o'qib bo'lmadi (%s).", e)
+        return {}
+
+
+def save_state(state: dict) -> None:
+    _ensure_dirs()
+    # Faqat oxirgi 30 kunni saqlaymiz
+    for key in sorted(state)[:-30]:
+        state.pop(key, None)
+    with open(config.STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+
+def slot_status(day: str, slot: str) -> str | None:
+    return (load_state().get(day) or {}).get(slot)
+
+
+def mark_slot(day: str, slot: str, status: str) -> None:
+    state = load_state()
+    state.setdefault(day, {})[slot] = status
+    save_state(state)
+    log.info("Holat: %s / %s -> %s", day, slot, status)

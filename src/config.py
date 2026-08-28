@@ -37,9 +37,24 @@ PHONE_NUMBERS = [
 # ---------- Vaqt ----------
 TZ = ZoneInfo("Asia/Tashkent")
 
-# ---------- Preview / tasdiq oqimi ----------
-# Post chiqishidan necha daqiqa oldin adminga preview yuboriladi
+# ---------- Jadval ----------
+# GitHub Actions'ning cron mexanizmi soatlab kechikishi mumkin. Shuning uchun tizim
+# "belgilangan vaqtni kutib o'tirmaydi", balki har 15 daqiqada "nima qilish kerak?"
+# deb tekshiradi. Kechikish bo'lsa keyingi tekshiruv o'zi tutib oladi.
+POST_SCHEDULE = [
+    {"slot": "morning", "publish_at": "09:00", "rubric": "useful", "poll_after_hours": 6},
+    {"slot": "evening", "publish_at": "17:00", "rubric": "facts", "poll_after_hours": 3},
+]
+
+# Post chiqishidan necha daqiqa oldin generatsiya boshlanadi va preview yuboriladi
 PREVIEW_LEAD_MINUTES = 30
+# Tizim kechikib ishga tushgan bo'lsa, adminga kamida shuncha daqiqa beriladi
+LATE_START_GRACE_MINUTES = 12
+# Belgilangan vaqtdan shuncha soat o'tib ketgan bo'lsa — post umuman chiqarilmaydi
+SKIP_IF_LATER_THAN_HOURS = 4
+# Poll o'z vaqtidan shuncha soat kechiksa — yuborilmaydi (eskirgan)
+POLL_MAX_LATE_HOURS = 20
+
 # "Qayta qilish" bosilgandan keyin yangi preview uchun necha daqiqa kutiladi
 REGEN_WAIT_MINUTES = 12
 # Maksimal necha marta qayta generatsiya qilish mumkin
@@ -98,14 +113,12 @@ RUBRIC_LENGTH = {
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
+STATE_FILE = os.path.join(DATA_DIR, "state.json")
 PENDING_DIR = os.path.join(DATA_DIR, "pending")
 
 # ---------- Rubrikalar ----------
-# Qaysi slotda qaysi rubrika chiqishi. Almashtirmoqchi bo'lsangiz shu yerni o'zgartiring.
-SLOT_RUBRIC = {
-    "morning": "useful",   # 09:00 — Foydali ma'lumotlar
-    "evening": "facts",    # 17:00 — Qiziqarli faktlar ("Bilarmidingiz?")
-}
+# Qaysi slotda qaysi rubrika chiqishi POST_SCHEDULE dan olinadi (yuqoriga qarang).
+SLOT_RUBRIC = {e["slot"]: e["rubric"] for e in POST_SCHEDULE}
 RUBRIC_NAMES = {
     "useful": "Foydali ma'lumotlar",
     "facts": "Qiziqarli faktlar",

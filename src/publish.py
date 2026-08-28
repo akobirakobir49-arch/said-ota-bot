@@ -149,38 +149,40 @@ def publish(post: dict, image: bytes | None) -> int | None:
     return mid
 
 
-# ---------------------------------------------------------------- main
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--slot", required=True, choices=["morning", "evening"])
-    ap.add_argument("--publish-at", required=True, help="HH:MM (Toshkent vaqti)")
-    ap.add_argument("--poll-after", type=float, required=True, help="necha soatdan keyin poll")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="kanalga chiqarmaydi, faqat adminga preview yuboradi")
-    args = ap.parse_args()
-
-    config.validate()
+# ---------------------------------------------------------------- slotni bajarish
+def run_slot(entry: dict, dry_run: bool = False) -> bool:
+    """Bitta slotni to'liq bajaradi. Muvaffaqiyatli bo'lsa True."""
+    slot = entry["slot"]
+    rubric = entry.get("rubric", "useful")
+    poll_after = float(entry.get("poll_after_hours", 6))
 
     now = datetime.now(config.TZ)
-    hh, mm = (int(x) for x in args.publish_at.split(":"))
-    publish_at = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
-    # Kechikib ishga tushgan bo'lsa ham adminga kamida 5 daqiqa beramiz
-    deadline = max(publish_at, now + timedelta(minutes=5))
+    hh, mm = (int(x) for x in entry["publish_at"].split(":"))
+    target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
 
-    log.info("=== SLOT: %s | Rejalashtirilgan chiqish: %s ===",
-             args.slot, publish_at.strftime("%Y-%m-%d %H:%M"))
+    # Kechikib ishga tushgan bo'lsak, adminga baribir qisqa vaqt beramiz
+    if now < target:
+        deadline = target
+    else:
+        deadline = now + timedelta(minutes=config.LATE_START_GRACE_MINUTES)
+        log.warning("Kechikib ishga tushdik (%s o'rniga %s) — adminga %s daqiqa beriladi.",
+                    target.strftime("%H:%M"), now.strftime("%H:%M"),
+                    config.LATE_START_GRACE_MINUTES)
+
+    log.info("=== SLOT: %s | rubrika: %s | mo'ljal: %s | deadline: %s ===",
+             slot, rubric, target.strftime("%H:%M"), deadline.strftime("%H:%M"))
 
     offset = tg.drop_pending_updates()
 
-    rubric = config.SLOT_RUBRIC.get(args.slot, "useful")
     post, research, qc = build_content(rubric)
     image = make_image(post)
-    post["_poll_time"] = (publish_at + timedelta(hours=args.poll_after)).strftime("%H:%M")
+    post["_poll_time"] = (datetime.now(config.TZ)
+                          + timedelta(hours=poll_after)).strftime("%H:%M")
 
     round_no = 1
     while True:
         token = secrets.token_hex(4)
-        send_preview(post, image, qc, token, publish_at, round_no)
+        send_preview(post, image, qc, token, deadline, round_no)
 
         clicked, offset = tg.wait_for_regen_click(deadline.timestamp(), offset, token)
         if not clicked:
@@ -201,50 +203,61 @@ def main() -> int:
         try:
             post, research, qc = build_content(rubric)
             image = make_image(post)
-            post["_poll_time"] = (publish_at + timedelta(hours=args.poll_after)).strftime("%H:%M")
         except Exception as e:  # noqa: BLE001
             log.exception("Qayta generatsiya xatosi")
             tg.send_message(config.ADMIN_CHAT_ID,
                             f"❌ Qayta generatsiya xatosi: <code>{str(e)[:300]}</code>\n"
                             "Oldingi variant chiqariladi.", raise_on_error=False)
             break
-        # Yangi variantga admin uchun qo'shimcha vaqt (chiqish vaqti o'tgan bo'lsa ham)
         deadline = datetime.now(config.TZ) + timedelta(minutes=config.REGEN_WAIT_MINUTES)
+        post["_poll_time"] = (deadline + timedelta(hours=poll_after)).strftime("%H:%M")
 
-    # Belgilangan vaqtdan oldin tayyor bo'lsak — kutamiz
-    wait_s = (publish_at - datetime.now(config.TZ)).total_seconds()
-    if wait_s > 0:
-        log.info("Chiqish vaqtigacha %.0f sekund kutilmoqda...", wait_s)
-        time.sleep(wait_s)
-
-    if args.dry_run:
+    if dry_run:
         log.info("DRY-RUN: kanalga chiqarilmadi.")
         tg.send_message(config.ADMIN_CHAT_ID, "🧪 <b>DRY-RUN</b> — kanalga chiqarilmadi.",
                         raise_on_error=False)
-        return 0
+        return True
 
     mid = publish(post, image)
+    published_at = datetime.now(config.TZ)
 
-    quiz = post.get("quiz", {})
-    history.save_pending(args.slot, {
+    history.save_pending(slot, {
         "channel_message_id": mid,
         "topic": post.get("_topic", ""),
         "category": post.get("_category", ""),
-        "published_at": datetime.now(config.TZ).isoformat(timespec="seconds"),
-        "quiz": quiz,
+        "rubric": rubric,
+        "published_at": published_at.isoformat(timespec="seconds"),
+        "poll_after_hours": poll_after,
+        "poll_due_at": (published_at + timedelta(hours=poll_after)).isoformat(timespec="seconds"),
+        "quiz": post.get("quiz", {}),
     })
     history.add(post.get("_category", ""), post.get("_topic", ""),
-                post.get("title", ""), args.slot, mid)
+                post.get("title", ""), slot, mid)
+    history.mark_slot(published_at.strftime("%Y-%m-%d"), slot, "published")
 
     tg.send_message(
         config.ADMIN_CHAT_ID,
         f"✅ <b>Post kanalga chiqarildi</b>\n"
-        f"🗂 {config.RUBRIC_NAMES.get(post.get('_rubric', 'useful'), '-')}\n"
+        f"🗂 {config.RUBRIC_NAMES.get(rubric, '-')}\n"
         f"📂 {post.get('_category', '-')}\n"
         f"📝 {post.get('_topic', '-')}\n"
-        f"❓ Test savoli soat {post.get('_poll_time', '—')} da chiqadi.",
+        f"❓ Test savoli ~{(published_at + timedelta(hours=poll_after)).strftime('%H:%M')} da chiqadi.",
         raise_on_error=False,
     )
+    return True
+
+
+# ---------------------------------------------------------------- CLI (qo'lda)
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--slot", required=True, choices=[e["slot"] for e in config.POST_SCHEDULE])
+    ap.add_argument("--dry-run", action="store_true",
+                    help="kanalga chiqarmaydi, faqat adminga preview yuboradi")
+    args = ap.parse_args()
+
+    config.validate()
+    entry = next(e for e in config.POST_SCHEDULE if e["slot"] == args.slot)
+    run_slot(entry, dry_run=args.dry_run)
     return 0
 
 
