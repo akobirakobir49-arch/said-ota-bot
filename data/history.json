@@ -118,5 +118,13 @@
     "topic": "Yangi so'yilgan issiq qo'y go'shti va muskul qotishi (rigor mortis) ilmi",
     "title": "Yangi so'yilgan go'sht va muskul qotishi",
     "message_id": 794
+  },
+  {
+    "datetime": "2026-08-28T20:30:32+05:00",
+    "slot": "morning",
+    "category": "Konservalar va tayyor mahsulotlar",
+    "topic": "Ochiq konserva qutisini metall idishda muzlatgichda saqlash xatosi va metall ionlari ajralishi ilmi",
+    "title": "Ochilgan konservani to'g'ri saqlash qoidalari",
+    "message_id": 797
   }
 ]

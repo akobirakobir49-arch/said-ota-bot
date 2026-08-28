@@ -1,0 +1,17 @@
+{
+  "channel_message_id": 797,
+  "topic": "Ochiq konserva qutisini metall idishda muzlatgichda saqlash xatosi va metall ionlari ajralishi ilmi",
+  "category": "Konservalar va tayyor mahsulotlar",
+  "published_at": "2026-08-28T20:30:32+05:00",
+  "quiz": {
+    "question": "Konserva qutisi ochilgach, mahsulotni to‘g‘ri saqlash uchun nima qilish kerak?",
+    "options": [
+      "Metall qutining ustiga paket yopib qo‘yish",
+      "Metall qoshiqni ichida qoldirib muzlatish",
+      "Shisha yoki plastik idishga o‘tkazib saqlash",
+      "Xona haroratida metall qutida qoldirish"
+    ],
+    "correct_index": 2,
+    "explanation": "Havo kirganda metall oksidlanishi tezlashadi. Mahsulot sifatini saqlash uchun uni shisha yoki plastik idishga o‘tkazish zarur."
+  }
+}
