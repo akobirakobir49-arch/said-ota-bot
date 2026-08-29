@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 802,
+  "topic": "Shokoladni to'g'ri saqlash va uning uzoq umr ko'rish sirlari",
+  "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+  "rubric": "facts",
+  "published_at": "2026-08-29T20:09:47+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-08-29T23:09:47+05:00",
+  "quiz": {
+    "question": "Shokolad yuzasida paydo bo‘ladigan oq g‘ubor nimadan darak beradi?",
+    "options": [
+      "Mahsulot mutlaqo buzilganidan",
+      "Kakao sariyog‘i ajralib qayta kristallanganidan",
+      "Shokolad tarkibida shakar ko‘payib ketganidan",
+      "Motiq va zamburug‘ rivojlanayotganidan"
+    ],
+    "correct_index": 1,
+    "explanation": "Oq g‘ubor — buzilish emas, balki harorat o‘zgarganda kakao sariyog‘ining sirtga chiqishidir. U yeyish uchun mutlaqo xavfsiz."
+  }
+}
