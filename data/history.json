@@ -142,5 +142,13 @@
     "topic": "Qora mayiz va uning tish hamda suyak salomatligi uchun yashirin ilmiy foydalari",
     "title": "Qora mayiz va tish hamda suyak salomatligi",
     "message_id": 805
+  },
+  {
+    "datetime": "2026-08-30T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Un va non mahsulotlari",
+    "topic": "Pretzel (tugunsimon perec noni)",
+    "title": "Pretzel haqida 4 ta hayratlanarli fakt",
+    "message_id": 809
   }
 ]
