@@ -2,5 +2,8 @@
   "2026-08-29": {
     "evening": "published",
     "morning": "skipped"
+  },
+  "2026-08-30": {
+    "morning": "published"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 805,
+  "topic": "Qora mayiz va uning tish hamda suyak salomatligi uchun yashirin ilmiy foydalari",
+  "category": "Asal va tabiiy shirinliklar",
+  "rubric": "useful",
+  "published_at": "2026-08-30T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-08-30T15:00:01+05:00",
+  "quiz": {
+    "question": "Qora mayiz tarkibidagi qaysi modda tishda bakteriyalar ko‘payishining oldini olishga yordam beradi?",
+    "options": [
+      "Saxaroza",
+      "Oltingugurt gazi",
+      "Oleanol kislotasi",
+      "Limon kislotasi"
+    ],
+    "correct_index": 2,
+    "explanation": "Tadqiqotlarga ko‘ra, oleanol kislotasi tish kariesi va milq kasalliklarini keltirib chiqaruvchi bakteriyalarga qarshi kurashadi."
+  }
+}
