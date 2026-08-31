@@ -4,8 +4,6 @@ name: Tekshiruv (har 15 daqiqada)
 # Shuning uchun tizim vaqtni kutmaydi: har 15 daqiqada "nima qilish kerak?" deb
 # tekshiradi va bajarilmagan ishni bajaradi. Bo'sh tekshiruv ~25 soniya oladi.
 on:
-  schedule:
-    - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
     inputs:
       force_slot:
