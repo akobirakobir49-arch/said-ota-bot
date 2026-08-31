@@ -158,5 +158,13 @@
     "topic": "Uzum ustidagi oq g'ubor ilmi va mevalarni pestitsidlardan to'g'ri tozalash",
     "title": "Uzum ustidagi oq g'ubor va uni to'g'ri saqlash sirlari",
     "message_id": 816
+  },
+  {
+    "datetime": "2026-08-31T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Ananas",
+    "title": "Ananas haqida 4 ta hayratlanarli fakt",
+    "message_id": 820
   }
 ]
