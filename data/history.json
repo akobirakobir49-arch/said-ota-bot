@@ -150,5 +150,13 @@
     "topic": "Pretzel (tugunsimon perec noni)",
     "title": "Pretzel haqida 4 ta hayratlanarli fakt",
     "message_id": 809
+  },
+  {
+    "datetime": "2026-08-31T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+    "topic": "Uzum ustidagi oq g'ubor ilmi va mevalarni pestitsidlardan to'g'ri tozalash",
+    "title": "Uzum ustidagi oq g'ubor va uni to'g'ri saqlash sirlari",
+    "message_id": 816
   }
 ]
