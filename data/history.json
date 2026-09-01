@@ -166,5 +166,13 @@
     "topic": "Ananas",
     "title": "Ananas haqida 4 ta hayratlanarli fakt",
     "message_id": 820
+  },
+  {
+    "datetime": "2026-09-01T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Sarimsoqni pishirishdan oldin 10 daqiqa kutish ilmi (Allitsin siri)",
+    "title": "Sarimsoq pishirishning 10 daqiqalik ilmiy siri",
+    "message_id": 823
   }
 ]
