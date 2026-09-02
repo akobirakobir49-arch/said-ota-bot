@@ -190,5 +190,13 @@
     "topic": "Ovqatdan keyin darhol choy ichish va temir so'rilishi ilmi",
     "title": "Ovqatdan keyin choy ichish va temir so'rilishi",
     "message_id": 829
+  },
+  {
+    "datetime": "2026-09-02T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+    "topic": "Pishloq haqida kutilmagan va hayratli sirlar",
+    "title": "Pishloq haqida 4 ta hayratlanarli fakt",
+    "message_id": 832
   }
 ]
