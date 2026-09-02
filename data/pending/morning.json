@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 829,
+  "topic": "Ovqatdan keyin darhol choy ichish va temir so'rilishi ilmi",
+  "category": "Choy va ichimliklar",
+  "rubric": "useful",
+  "published_at": "2026-09-02T09:00:03+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-02T15:00:03+05:00",
+  "quiz": {
+    "question": "Taom tarkibidagi temir moddasi yaxshi so‘rilishi uchun ovqat va choy orasida qancha vaqt kutgan ma’qul?",
+    "options": [
+      "Darhol ichish lozim",
+      "10-15 daqiqa",
+      "45-60 daqiqa",
+      "Kamida 3 soat"
+    ],
+    "correct_index": 2,
+    "explanation": "Tadqiqotlarga ko‘ra, ovqat va choy o‘rtasida 45-60 daqiqa tanaffus qilish choyning temir so‘rilishiga salbiy ta’sirini 50% dan ortiqqa kamaytiradi."
+  }
+}
