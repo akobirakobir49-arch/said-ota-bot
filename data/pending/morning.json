@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 854,
+  "topic": "Tovuqning oq va qora go'shti: Mioglobin ilmi, oziqlik farqi va pishirish sirlari",
+  "category": "Tovuq go'shti va parranda",
+  "rubric": "useful",
+  "published_at": "2026-09-04T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-04T15:00:02+05:00",
+  "quiz": {
+    "question": "Tovuqning qora go‘shti (son va boldir) ko‘krak go‘shtiga qaraganda qaysi mineralga 3 baravar boyroq?",
+    "options": [
+      "Kaltsey",
+      "Rux",
+      "Natriy",
+      "Kaliy"
+    ],
+    "correct_index": 1,
+    "explanation": "USDA ma'lumotlariga ko'ra, 100 gramm tovuqning qora go'shti ko'krak go'shtiga qaraganda deyarli 3 baravar ko'p rux saqlaydi."
+  }
+}

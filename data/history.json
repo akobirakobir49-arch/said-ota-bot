@@ -214,5 +214,13 @@
     "topic": "Losos (Syomga) baliqlari",
     "title": "Losos baliqlari haqida 4 ta hayratlanarli fakt",
     "message_id": 851
+  },
+  {
+    "datetime": "2026-09-04T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "Tovuqning oq va qora go'shti: Mioglobin ilmi, oziqlik farqi va pishirish sirlari",
+    "title": "Tovuqning oq va qora go'shti farqi va pishirish sirlari",
+    "message_id": 854
   }
 ]
