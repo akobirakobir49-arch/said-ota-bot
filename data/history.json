@@ -238,5 +238,13 @@
     "topic": "Qiymali mol go'shti va steykning mikrobiologik xavfsizligi hamda pishirish harorati",
     "title": "Steyk va qiyma pishirish xavfsizligi",
     "message_id": 860
+  },
+  {
+    "datetime": "2026-09-05T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Muzlatilgan mahsulotlar",
+    "topic": "Muzlatilgan yashil noxat va tez muzlatish sirlari",
+    "title": "Muzlatilgan yashil noxat va tez muzlatish sirlari",
+    "message_id": 863
   }
 ]

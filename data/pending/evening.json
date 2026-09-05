@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 863,
+  "topic": "Muzlatilgan yashil noxat va tez muzlatish sirlari",
+  "category": "Muzlatilgan mahsulotlar",
+  "rubric": "facts",
+  "published_at": "2026-09-05T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-05T20:00:01+05:00",
+  "quiz": {
+    "question": "Yashil noxat shirinligi va vitaminlarini yo‘qotmasligi uchun terilgach qancha vaqt ichida muzlatiladi?",
+    "options": [
+      "24 soat ichida",
+      "3 soat ichida",
+      "12 soat ichida",
+      "2 kun ichida"
+    ],
+    "correct_index": 1,
+    "explanation": "Noxat terilgach atigi 2,5-3 soat ichida muzlatilsa, undagi tabiiy shakar va foydali vitaminlar to‘liq saqlanib qoladi."
+  }
+}
