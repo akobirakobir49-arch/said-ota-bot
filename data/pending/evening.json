@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 869,
+  "topic": "Extra Virgin zaytun yog'i",
+  "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+  "rubric": "facts",
+  "published_at": "2026-09-06T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-06T20:00:02+05:00",
+  "quiz": {
+    "question": "Sifatli Extra Virgin zaytun yog‘ini totganda tomoqdagi yengil achish nimani anglatadi?",
+    "options": [
+      "Yog‘ning yaroqlilik muddati o‘tganini",
+      "Yog‘ tarkibida foydali antioksidantlar ko‘pligini",
+      "Yog‘ga qalampir ekstrakti qo‘shilganini",
+      "Zaytun mevalari sifatiz ekanligini"
+    ],
+    "correct_index": 1,
+    "explanation": "Tomoqdagi achchiqlik va yengil achish yog'ning mutlaqo yangiligi va foydali polifenol antioksidantlariga boy ekanligining ilmiy isbotidir."
+  }
+}
