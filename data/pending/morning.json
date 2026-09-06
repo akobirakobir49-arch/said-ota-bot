@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 866,
+  "topic": "Qo'y go'shtidagi kollagen va kuzgi sho'rvalarni yumshoq pishirish ilmi",
+  "category": "Qo'y go'shti",
+  "rubric": "useful",
+  "published_at": "2026-09-06T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-06T15:00:01+05:00",
+  "quiz": {
+    "question": "Qo‘y go‘shtidagi kollagen oqsili qaysi harorat oralig‘ida sekin erib, go‘shtni ipakdek yumshoq qiladi?",
+    "options": [
+      "100°C va undan yuqori shiddatli qaynashda",
+      "68–80°C past haroratli nam muhitda",
+      "150–180°C quruq tovada qovurilganda",
+      "0–5°C muzlatgich salqinida"
+    ],
+    "correct_index": 1,
+    "explanation": "Kollagen 68–80°C nam muhitda sekin-asta erib jelatinga aylanadi va go‘shtga sershiralik beradi."
+  }
+}

@@ -246,5 +246,13 @@
     "topic": "Muzlatilgan yashil noxat va tez muzlatish sirlari",
     "title": "Muzlatilgan yashil noxat va tez muzlatish sirlari",
     "message_id": 863
+  },
+  {
+    "datetime": "2026-09-06T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shtidagi kollagen va kuzgi sho'rvalarni yumshoq pishirish ilmi",
+    "title": "Qo'y go'shtini yumshoq pishirish ilmi",
+    "message_id": 866
   }
 ]
