@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 875,
+  "topic": "Pista (Pistachio)",
+  "category": "Quruq mevalar va yong'oqlar",
+  "rubric": "facts",
+  "published_at": "2026-09-07T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-07T20:00:02+05:00",
+  "quiz": {
+    "question": "Nima uchun Yaqin Sharq mamlakatlarida pista \"tabassum qiluvchi yong‘oq\" deb ataladi?",
+    "options": [
+      "Tarkibida kayfiyatni ko‘taruvchi moddalar ko‘pligi uchun",
+      "Pishib yetilganda po‘chog‘i o‘z-o‘zidan kulgichdek yorilgani uchun",
+      "Saba malikasi uni faqat kulib iste'mol qilgani uchun",
+      "Daraxti gullaganda tabassum shaklidagi gullar ochgani uchun"
+    ],
+    "correct_index": 1,
+    "explanation": "Pista to‘liq pishganda qattiq po‘chog‘i o‘z-o‘zidan tirqish bo‘lib yoriladi va ko‘rinishidan xuddi kulib turgandek taassurot qoldiradi."
+  }
+}
