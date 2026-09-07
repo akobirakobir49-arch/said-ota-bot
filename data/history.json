@@ -262,5 +262,13 @@
     "topic": "Extra Virgin zaytun yog'i",
     "title": "Extra Virgin zaytun yog'i haqida 4 ta fakt",
     "message_id": 869
+  },
+  {
+    "datetime": "2026-09-07T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)",
+    "topic": "Shisha idishdagi bolalar pyuresi: 'Double-dipping' xatosi va saqlash ilmi",
+    "title": "Bolalar pyuresini saqlash va yedirish qoidalari",
+    "message_id": 872
   }
 ]
