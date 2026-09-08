@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 886,
+  "topic": "Sariyog' (Butter)",
+  "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+  "rubric": "facts",
+  "published_at": "2026-09-08T17:00:06+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-08T20:00:06+05:00",
+  "quiz": {
+    "question": "O‘rta asrlarda Skandinaviyada dehqonlar soliqlarni kumush o‘rniga nima bilan to‘lashgan?",
+    "options": [
+      "Asal",
+      "Sariyog‘",
+      "Pishloq",
+      "G‘alla"
+    ],
+    "correct_index": 1,
+    "explanation": "Sariyog‘ o‘rta asrlarda shunchalik qimmatli hisoblanganki, u valyuta o‘rnida soliq va ijara haqini to‘lashda ishlatilgan."
+  }
+}
