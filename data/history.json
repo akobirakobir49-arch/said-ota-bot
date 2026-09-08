@@ -278,5 +278,13 @@
     "topic": "Pista (Pistachio)",
     "title": "Pista haqida 4 ta hayratlanarli fakt",
     "message_id": 875
+  },
+  {
+    "datetime": "2026-09-08T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+    "topic": "Kartoshka va piyozni saqlash sirlari: Kuzgi zaxiradagi ilmiy va amaliy xatolar",
+    "title": "Kartoshka va piyozni to'g'ri saqlash sirlari",
+    "message_id": 879
   }
 ]
