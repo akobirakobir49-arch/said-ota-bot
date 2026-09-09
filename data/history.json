@@ -294,5 +294,13 @@
     "topic": "Sariyog' (Butter)",
     "title": "Sariyog' haqida 4 ta hayratlanarli fakt",
     "message_id": 886
+  },
+  {
+    "datetime": "2026-09-09T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Qovurilgan yog'ni qayta ishlatishning yashirin ilmiy xavflari",
+    "title": "Qovurilgan yog'ni qayta ishlatish qoidalari",
+    "message_id": 889
   }
 ]
