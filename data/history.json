@@ -302,5 +302,13 @@
     "topic": "Qovurilgan yog'ni qayta ishlatishning yashirin ilmiy xavflari",
     "title": "Qovurilgan yog'ni qayta ishlatish qoidalari",
     "message_id": 889
+  },
+  {
+    "datetime": "2026-09-09T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Baliq va dengiz mahsulotlari",
+    "topic": "Tunets (Tunj baliq)",
+    "title": "Tunets baliq haqida qiziqarli faktlar",
+    "message_id": 892
   }
 ]
