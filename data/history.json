@@ -318,5 +318,13 @@
     "topic": "Baqlajon va yog' so'rilishi ilmi: Osmos jarayoni hamda nasunin antioksidanti siri",
     "title": "Baqlajon va yog' so'rilishi siri",
     "message_id": 895
+  },
+  {
+    "datetime": "2026-09-10T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Anor (Pomegranate)",
+    "title": "Anor haqida 4 ta hayratlanarli fakt",
+    "message_id": 898
   }
 ]
