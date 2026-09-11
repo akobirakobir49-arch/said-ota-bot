@@ -326,5 +326,13 @@
     "topic": "Anor (Pomegranate)",
     "title": "Anor haqida 4 ta hayratlanarli fakt",
     "message_id": 898
+  },
+  {
+    "datetime": "2026-09-11T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Ziravorlar va kraviy o'tlar",
+    "topic": "Tseylon va Kassiya dolchini: Jigar salomatligi va do'konda to'g'ri tanlash ilmi",
+    "title": "Tseylon va Kassiya dolchinini tanlash ilmi",
+    "message_id": 901
   }
 ]
