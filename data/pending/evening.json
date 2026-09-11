@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 910,
+  "topic": "Konservalangan quyultirilgan sut (Sgushchonka)",
+  "category": "Konservalar va tayyor mahsulotlar",
+  "rubric": "facts",
+  "published_at": "2026-09-11T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-11T20:00:02+05:00",
+  "quiz": {
+    "question": "Nima uchun shirin quyultirilgan sut sterillanmasdan ham yillab buzilmaydi?",
+    "options": [
+      "Tarkibida sun'iy kimyoviy konservantlar borligi sababli",
+      "45% shakar konsentratsiyasi bakteriyalarni suvsizlantirgani uchun",
+      "Yopiq bankada kislorod mutlaqo bo'lmagani sababli",
+      "Qadoqlash jarayonida sut muzlatib ishlangani uchun"
+    ],
+    "correct_index": 1,
+    "explanation": "Yuqori shakar konsentratsiyasi osmos hodisasi orqali bakteriyalardagi suvni so'rib oladi va ularni suvsizlantirib ko'payishiga yo'l qo'ymaydi."
+  }
+}

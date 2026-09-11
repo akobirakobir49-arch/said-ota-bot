@@ -334,5 +334,13 @@
     "topic": "Tseylon va Kassiya dolchini: Jigar salomatligi va do'konda to'g'ri tanlash ilmi",
     "title": "Tseylon va Kassiya dolchinini tanlash ilmi",
     "message_id": 901
+  },
+  {
+    "datetime": "2026-09-11T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Konservalar va tayyor mahsulotlar",
+    "topic": "Konservalangan quyultirilgan sut (Sgushchonka)",
+    "title": "Quyultirilgan sut (Sgushchonka) haqida 4 ta hayratlanarli fakt",
+    "message_id": 910
   }
 ]
