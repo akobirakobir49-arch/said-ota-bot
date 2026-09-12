@@ -350,5 +350,13 @@
     "topic": "Yorqin kuraga (o'rik qoqisi) va E220 (sulfat angidrid) xavfsizligi",
     "title": "Yorqin kuragani to'g'ri tayyorlash siri",
     "message_id": 914
+  },
+  {
+    "datetime": "2026-09-12T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Mol go'shti",
+    "topic": "Mol go'shti haqidagi kutilmagan sirlar",
+    "title": "Mol go'shti haqida 4 ta hayratlanarli fakt",
+    "message_id": 917
   }
 ]
