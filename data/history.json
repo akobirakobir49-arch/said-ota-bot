@@ -358,5 +358,13 @@
     "topic": "Mol go'shti haqidagi kutilmagan sirlar",
     "title": "Mol go'shti haqida 4 ta hayratlanarli fakt",
     "message_id": 917
+  },
+  {
+    "datetime": "2026-09-13T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Choy va ichimliklar",
+    "topic": "Na'matak (shipovnik) damlamasi: C vitamini va antioksidantlarni saqlab qolish ilmi",
+    "title": "Na'matakni to'g'ri damlash sirlari",
+    "message_id": 920
   }
 ]

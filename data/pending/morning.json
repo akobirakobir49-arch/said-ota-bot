@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 920,
+  "topic": "Na'matak (shipovnik) damlamasi: C vitamini va antioksidantlarni saqlab qolish ilmi",
+  "category": "Choy va ichimliklar",
+  "rubric": "useful",
+  "published_at": "2026-09-13T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-13T15:00:02+05:00",
+  "quiz": {
+    "question": "Na‘matak damlamasida C vitaminini maksimal saqlab qolish uchun suv harorati qanday bo‘lishi kerak?",
+    "options": [
+      "100°C qaynoq suv",
+      "80–85°C qaynab biroz sovigan suv",
+      "40–50°C iliq suv",
+      "Muzday sovuq suv"
+    ],
+    "correct_index": 1,
+    "explanation": "Na‘matak 100°C da qaynatilganda C vitaminining 50–70% qismi yo‘qoladi. Optimal harorat — 80–85°C hisoblanadi."
+  }
+}
