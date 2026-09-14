@@ -1,20 +1,20 @@
 {
-  "channel_message_id": 920,
-  "topic": "Na'matak (shipovnik) damlamasi: C vitamini va antioksidantlarni saqlab qolish ilmi",
-  "category": "Choy va ichimliklar",
+  "channel_message_id": 923,
+  "topic": "Muzlatilgan rezavorlar va IQF tez muzlatish ilmi",
+  "category": "Muzlatilgan mahsulotlar",
   "rubric": "useful",
-  "published_at": "2026-09-13T09:00:02+05:00",
+  "published_at": "2026-09-14T09:42:38+05:00",
   "poll_after_hours": 6.0,
-  "poll_due_at": "2026-09-13T15:00:02+05:00",
+  "poll_due_at": "2026-09-14T15:42:38+05:00",
   "quiz": {
-    "question": "Na‘matak damlamasida C vitaminini maksimal saqlab qolish uchun suv harorati qanday bo‘lishi kerak?",
+    "question": "Muzlatilgan rezavorlarni (chernika, malina) vitaminlarini yo‘qotmasdan eritishning eng to‘g‘ri usuli qaysi?",
     "options": [
-      "100°C qaynoq suv",
-      "80–85°C qaynab biroz sovigan suv",
-      "40–50°C iliq suv",
-      "Muzday sovuq suv"
+      "Issiq suv solingan idishda shoshilinch eritish",
+      "Xona haroratida stolda qoldirish",
+      "Muzlatgichning asosiy bo‘limida (+4°C) sekin eritish",
+      "Mikroto‘lqinli pechda tezkor isitish"
     ],
-    "correct_index": 1,
-    "explanation": "Na‘matak 100°C da qaynatilganda C vitaminining 50–70% qismi yo‘qoladi. Optimal harorat — 80–85°C hisoblanadi."
+    "correct_index": 2,
+    "explanation": "Rezavorlarni +4°C haroratda sekin eritish ularning shaklini hamda tarkibidagi Vitamin C va B guruhi vitaminlarini sharbat bilan oqib ketishidan saqlaydi."
   }
 }
