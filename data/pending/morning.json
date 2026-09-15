@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 929,
+  "topic": "Xom tovuqni pishirishdan oldin yuvish xatosi va oshxona gigenasi",
+  "category": "Tovuq go'shti va parranda",
+  "rubric": "useful",
+  "published_at": "2026-09-15T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-15T15:00:01+05:00",
+  "quiz": {
+    "question": "Tadqiqotlarga ko‘ra, xom tovuqni kran ostida yuvganda bakteriyalar suv tomchilari orqali qancha masofagacha purkalishi mumkin?",
+    "options": [
+      "10 sm gacha",
+      "90 sm gacha",
+      "2 metr gacha",
+      "Bakteriyalar mutlaqo purkalmaydi"
+    ],
+    "correct_index": 1,
+    "explanation": "Suv oqimi tovuq sirtidagi bakteriyalarni mikroskopik tomchilar orqali 90 sm masofagacha purkab, atrofdagi boshqa oziq-ovqatlarga tarqatishi mumkin."
+  }
+}

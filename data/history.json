@@ -382,5 +382,13 @@
     "topic": "Chabatta (Ciabatta) noni",
     "title": "Chabatta noni haqida 4 ta hayratlanarli fakt",
     "message_id": 926
+  },
+  {
+    "datetime": "2026-09-15T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "Xom tovuqni pishirishdan oldin yuvish xatosi va oshxona gigenasi",
+    "title": "Xom tovuqni pishirishdan oldin yuvish haqida",
+    "message_id": 929
   }
 ]
