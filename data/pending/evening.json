@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 932,
+  "topic": "Qo'y go'shtining dunyo bo me'yoriy va tarixiy sirlari",
+  "category": "Qo'y go'shti",
+  "rubric": "facts",
+  "published_at": "2026-09-15T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-15T20:00:01+05:00",
+  "quiz": {
+    "question": "Miloddan avvalgi 1730-yilga oid Mesopotamiya taxtachalaridagi eng birinchi yozma retseptda qaysi masalliq asosiy bo‘lgan?",
+    "options": [
+      "Mol go‘shti",
+      "Qo‘y go‘shti",
+      "Parranda go‘shti",
+      "Dengiz mahsulotlari"
+    ],
+    "correct_index": 1,
+    "explanation": "Insoniyat tarixidagi eng birinchi yozma retseptlarda asosiy masalliq aynan qo‘y go‘shti va uning dimlamalari bo‘lgan."
+  }
+}

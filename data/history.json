@@ -390,5 +390,13 @@
     "topic": "Xom tovuqni pishirishdan oldin yuvish xatosi va oshxona gigenasi",
     "title": "Xom tovuqni pishirishdan oldin yuvish haqida",
     "message_id": 929
+  },
+  {
+    "datetime": "2026-09-15T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shtining dunyo bo me'yoriy va tarixiy sirlari",
+    "title": "Qo'y go'shti haqida 4 ta hayratlanarli fakt",
+    "message_id": 932
   }
 ]
