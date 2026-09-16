@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 938,
+  "topic": "Bodom (Almond)",
+  "category": "Quruq mevalar va yong'oqlar",
+  "rubric": "facts",
+  "published_at": "2026-09-16T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-16T20:00:01+05:00",
+  "quiz": {
+    "question": "Botanika nuqtai nazaridan bodom aslida qaysi mevalar bilan bitta oilaga mansub?",
+    "options": [
+      "Yong'oq va fındıq",
+      "Shaftoli va o'rik",
+      "Xurmo va anjir",
+      "Pista va yeryong'oq"
+    ],
+    "correct_index": 1,
+    "explanation": "Bodom oshpazlikda yong'oq deb atalsa-da, botanik jihatdan shaftoli va o'rik kabi danakli mevalar turiga kiradi."
+  }
+}
