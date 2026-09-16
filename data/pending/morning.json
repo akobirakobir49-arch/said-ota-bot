@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 935,
+  "topic": "Muzlatilgan skumbriya: Kuzgi Omega-3 manbai va sekin eritish ilmi",
+  "category": "Baliq va dengiz mahsulotlari",
+  "rubric": "useful",
+  "published_at": "2026-09-16T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-16T15:00:02+05:00",
+  "quiz": {
+    "question": "Skumbriya balig‘ini eritishning eng xavfsiz va to‘g‘ri usuli qaysi?",
+    "options": [
+      "Xona haroratida stol ustida bir necha soat qoldirish",
+      "Issiq suv solingan idishga solib tez eritish",
+      "Muzlatgichning pastki javonida (+2°C...+4°C) sekin eritish",
+      "Pechda yuqori harorat berib zudlik bilan eritish"
+    ],
+    "correct_index": 2,
+    "explanation": "Muzlatgichda (+2°C...+4°C) sekin eritish baliq sersharbatligini saqlaydi va zararli gistamin to‘planishining oldini oladi."
+  }
+}

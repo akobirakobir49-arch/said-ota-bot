@@ -398,5 +398,13 @@
     "topic": "Qo'y go'shtining dunyo bo me'yoriy va tarixiy sirlari",
     "title": "Qo'y go'shti haqida 4 ta hayratlanarli fakt",
     "message_id": 932
+  },
+  {
+    "datetime": "2026-09-16T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Baliq va dengiz mahsulotlari",
+    "topic": "Muzlatilgan skumbriya: Kuzgi Omega-3 manbai va sekin eritish ilmi",
+    "title": "Kuzgi skumbriya baliqining foydasi va to'g'ri eritish siri",
+    "message_id": 935
   }
 ]
