@@ -422,5 +422,13 @@
     "topic": "Sut ichganda qorin dam bo'lishi: Laktoza hazmsizligida sut mahsulotlarini to'g'ri tanlash ilmi",
     "title": "Sut mahsulotlarini to'g'ri tanlash",
     "message_id": 941
+  },
+  {
+    "datetime": "2026-09-17T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Behi (Kuzning oltin mevasidagi ilmiy va tarixiy sirlar)",
+    "title": "Behi haqida 4 ta hayratlanarli fakt",
+    "message_id": 948
   }
 ]

@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 948,
+  "topic": "Behi (Kuzning oltin mevasidagi ilmiy va tarixiy sirlar)",
+  "category": "Mevalar (mavsumiy va import)",
+  "rubric": "facts",
+  "published_at": "2026-09-17T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-17T20:00:01+05:00",
+  "quiz": {
+    "question": "Mashhur \"marmalad\" shirinligining nomi qaysi ma'noni anglatuvchi so'zdan kelib chiqqan?",
+    "options": [
+      "Olma",
+      "Behi",
+      "Asal",
+      "Shakar"
+    ],
+    "correct_index": 1,
+    "explanation": "\"Marmalad\" so'zi portugalcha \"marmelo\" (behi) so'zidan olingan, chunki eng birinchi marmaladlar aynan behidan tayyorlangan."
+  }
+}
