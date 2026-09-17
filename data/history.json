@@ -414,5 +414,13 @@
     "topic": "Bodom (Almond)",
     "title": "Bodom haqida 4 ta hayratlanarli fakt",
     "message_id": 938
+  },
+  {
+    "datetime": "2026-09-17T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+    "topic": "Sut ichganda qorin dam bo'lishi: Laktoza hazmsizligida sut mahsulotlarini to'g'ri tanlash ilmi",
+    "title": "Sut mahsulotlarini to'g'ri tanlash",
+    "message_id": 941
   }
 ]
