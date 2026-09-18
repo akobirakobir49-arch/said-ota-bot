@@ -430,5 +430,13 @@
     "topic": "Behi (Kuzning oltin mevasidagi ilmiy va tarixiy sirlar)",
     "title": "Behi haqida 4 ta hayratlanarli fakt",
     "message_id": 948
+  },
+  {
+    "datetime": "2026-09-18T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Tuxum",
+    "topic": "Qaynatilgan tuxum sarig'idagi yashil-kulrang halqa ilmi",
+    "title": "Tuxum sarig'idagi yashil halqa haqida",
+    "message_id": 952
   }
 ]
