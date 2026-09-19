@@ -446,5 +446,13 @@
     "topic": "Guruch yormasi",
     "title": "Guruch haqida 4 ta hayratlanarli fakt",
     "message_id": 955
+  },
+  {
+    "datetime": "2026-09-19T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Muzlatilgan mahsulotlar",
+    "topic": "Muzlatilgan shpinat: Nega u xolodilnikdagi 'yangi' shpinatdan ko'ra foydaliroq?",
+    "title": "Muzlatilgan shpinatning foydasi va to'g'ri tayyorlash",
+    "message_id": 958
   }
 ]

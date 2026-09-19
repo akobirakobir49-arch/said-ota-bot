@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 958,
+  "topic": "Muzlatilgan shpinat: Nega u xolodilnikdagi 'yangi' shpinatdan ko'ra foydaliroq?",
+  "category": "Muzlatilgan mahsulotlar",
+  "rubric": "useful",
+  "published_at": "2026-09-19T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-19T15:00:02+05:00",
+  "quiz": {
+    "question": "Nega muzlatilgan shpinatni suvda qaynatib eritish tavsiya etilmaydi?",
+    "options": [
+      "Suvda eruvchi C va B vitaminlari yuvilib ketgani uchun",
+      "Shpinatning rangi butunlay qorayib qolgani uchun",
+      "Tarkibidagi yog'lar parchalanib ketgani uchun",
+      "Muzlatilgan shpinat faqat xomligicha yeyilishi kerakligi uchun"
+    ],
+    "correct_index": 0,
+    "explanation": "Shpinatni suvda qaynatib eritganda undagi suvda eruvchi C va B guruhi vitaminlari suvga chiqib, yuvilib ketadi. Shuning uchun uni eritmasdan to'g'ridan-to'g'ri tovada dimlash ma'qul."
+  }
+}
