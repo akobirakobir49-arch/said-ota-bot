@@ -85,5 +85,8 @@
   "2026-09-19": {
     "evening": "published",
     "morning": "published"
+  },
+  "2026-09-20": {
+    "morning": "published"
   }
 }

@@ -462,5 +462,13 @@
     "topic": "Tabiiy asal va uning hayratli sirlari",
     "title": "Tabiiy asal haqida 4 ta hayratlanarli fakt",
     "message_id": 961
+  },
+  {
+    "datetime": "2026-09-20T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Rafinatsiyalangan paxta yog'i va uni 'dog'lash' ilmi",
+    "title": "Paxta yog'ini dog'lash haqida",
+    "message_id": 964
   }
 ]

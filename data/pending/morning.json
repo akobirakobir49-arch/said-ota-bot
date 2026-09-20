@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 964,
+  "topic": "Rafinatsiyalangan paxta yog'i va uni 'dog'lash' ilmi",
+  "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+  "rubric": "useful",
+  "published_at": "2026-09-20T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-20T15:00:01+05:00",
+  "quiz": {
+    "question": "Rafinatsiyalangan paxta yog'ida taom pishirish uchun uni necha darajagacha qizdirish yetarli?",
+    "options": [
+      "100–120°C",
+      "170–180°C",
+      "230–250°C",
+      "300°C dan yuqori"
+    ],
+    "correct_index": 1,
+    "explanation": "Rafinatsiyalangan paxta yog'ini tutatmasdan, 170–180°C ga qizdirish taom xavfsiz va mazali chiqishi uchun to'liq yetarlidir."
+  }
+}
