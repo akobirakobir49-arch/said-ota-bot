@@ -486,5 +486,13 @@
     "topic": "Sabzi va beta-karotin: Nega xom sabziga qaraganda yog'da pishirilgani foydaliroq?",
     "title": "Sabzi va beta-karotin foydasi",
     "message_id": 970
+  },
+  {
+    "datetime": "2026-09-21T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Quruq mevalar va yong'oqlar",
+    "topic": "Keshyu yong'og'i",
+    "title": "Keshyu yong'og'i haqida qiziqarli faktlar",
+    "message_id": 974
   }
 ]
