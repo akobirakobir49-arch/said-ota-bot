@@ -478,5 +478,13 @@
     "topic": "Konservalangan sardina baliqlari",
     "title": "Sardina baliq konservasi haqida 4 ta hayratlanarli fakt",
     "message_id": 967
+  },
+  {
+    "datetime": "2026-09-21T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Sabzi va beta-karotin: Nega xom sabziga qaraganda yog'da pishirilgani foydaliroq?",
+    "title": "Sabzi va beta-karotin foydasi",
+    "message_id": 970
   }
 ]
