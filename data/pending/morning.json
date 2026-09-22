@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 980,
+  "topic": "Mol go'shtini mushak tolalari ko'ndalangiga kesish ilmi",
+  "category": "Mol go'shti",
+  "rubric": "useful",
+  "published_at": "2026-09-22T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-22T15:00:01+05:00",
+  "quiz": {
+    "question": "Mol go‘shtini tolasiga ko‘ndalang (90 daraja) kesish yumshoqlikka qanday ta’sir qiladi?",
+    "options": [
+      "Go‘sht qattiqlashib, suvini yo‘qotadi",
+      "Go‘sht 4,5 baravar yumshoqroq bo‘ladi",
+      "Pishish vaqti 2 baravar uzayadi",
+      "Hech qanday ta’sir ko‘rsatmaydi"
+    ],
+    "correct_index": 1,
+    "explanation": "Tadqiqotlarga ko‘ra, tolasiga ko‘ndalang kesilgan go‘sht tola bo‘ylab kesilganiga qaraganda 4,5 baravar yumshoqroq bo‘ladi."
+  }
+}
