@@ -502,5 +502,13 @@
     "topic": "Mol go'shtini mushak tolalari ko'ndalangiga kesish ilmi",
     "title": "Mol go'shtini ko'ndalang kesish siri",
     "message_id": 980
+  },
+  {
+    "datetime": "2026-09-22T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Ziravorlar va kraviy o'tlar",
+    "topic": "Muskat yong'og'i va muskat guli",
+    "title": "Muskat yong'og'i va muskat guli haqida faktlar",
+    "message_id": 983
   }
 ]
