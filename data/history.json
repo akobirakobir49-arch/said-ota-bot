@@ -510,5 +510,13 @@
     "topic": "Muskat yong'og'i va muskat guli",
     "title": "Muskat yong'og'i va muskat guli haqida faktlar",
     "message_id": 983
+  },
+  {
+    "datetime": "2026-09-23T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Tuxum",
+    "topic": "Tuxumni sovutgich eshigida saqlash xatosi va to'g'ri saqlash ilmi",
+    "title": "Tuxumni to'g'ri saqlash va yuvish qoidalari",
+    "message_id": 987
   }
 ]
