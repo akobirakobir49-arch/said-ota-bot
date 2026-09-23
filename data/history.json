@@ -518,5 +518,13 @@
     "topic": "Tuxumni sovutgich eshigida saqlash xatosi va to'g'ri saqlash ilmi",
     "title": "Tuxumni to'g'ri saqlash va yuvish qoidalari",
     "message_id": 987
+  },
+  {
+    "datetime": "2026-09-23T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Muzlatilgan mahsulotlar",
+    "topic": "Muzlatilgan pitsa",
+    "title": "Muzlatilgan pitsa haqida 4 ta hayratlanarli fakt",
+    "message_id": 991
   }
 ]
