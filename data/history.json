@@ -526,5 +526,13 @@
     "topic": "Muzlatilgan pitsa",
     "title": "Muzlatilgan pitsa haqida 4 ta hayratlanarli fakt",
     "message_id": 991
+  },
+  {
+    "datetime": "2026-09-24T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+    "topic": "Tvorog yog'liligi (0% vs 5-9%) va kazein oqsili: Kuzgi organizmni tiklash hamda kaltsiy so'rilishi ilmi",
+    "title": "Tvorog yog'liligi va kazein oqsili haqida",
+    "message_id": 994
   }
 ]
