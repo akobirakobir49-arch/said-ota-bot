@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 997,
+  "topic": "Ananas — tropik meva va uning tarixiy hamda botanik sirlari",
+  "category": "Mevalar (mavsumiy va import)",
+  "rubric": "facts",
+  "published_at": "2026-09-24T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-24T20:00:01+05:00",
+  "quiz": {
+    "question": "18-asr Yevropasida zodagonlar ananasdan ko‘proq qanday maqsadda foydalanishgan?",
+    "options": [
+      "Murabbo va shirinliklar tayyorlashda",
+      "Kechalarda mavqeini ko‘rsatish uchun ijaraga olishgan",
+      "Go‘shtni yumshatuvchi ziravor sifatida",
+      "Xonalarni xushbo‘ylashtirish uchun"
+    ],
+    "correct_index": 1,
+    "explanation": "18-asrda ananas juda kamyob va qimmat bo‘lgani sababli zodagonlar uni yeyish uchun emas, o‘z boyligini ko‘rsatishga ijaraga olishgan."
+  }
+}
