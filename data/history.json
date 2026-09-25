@@ -542,5 +542,13 @@
     "topic": "Ananas — tropik meva va uning tarixiy hamda botanik sirlari",
     "title": "Ananas haqida 4 ta hayratlanarli fakt",
     "message_id": 997
+  },
+  {
+    "datetime": "2026-09-25T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Konservalar va tayyor mahsulotlar",
+    "topic": "Konservalangan tomat pastasi va likopin ilmi",
+    "title": "Konservalangan tomat pastasi va likopin siri",
+    "message_id": 1000
   }
 ]
