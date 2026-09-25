@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1003,
+  "topic": "Fransuz baget noni",
+  "category": "Un va non mahsulotlari",
+  "rubric": "facts",
+  "published_at": "2026-09-25T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-25T20:00:02+05:00",
+  "quiz": {
+    "question": "Fransiyadagi “Décret Pain” qonuniga ko‘ra, an’anaviy baget nechta masalliqdan tayyorlanishi shart?",
+    "options": [
+      "3 ta",
+      "4 ta",
+      "5 ta",
+      "6 ta"
+    ],
+    "correct_index": 1,
+    "explanation": "Qonunga ko‘ra, an’anaviy fransuz bageti faqat 4 ta masalliqdan: bug‘doy uni, suv, tuz va xamirturushdan tayyorlanadi."
+  }
+}

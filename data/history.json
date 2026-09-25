@@ -550,5 +550,13 @@
     "topic": "Konservalangan tomat pastasi va likopin ilmi",
     "title": "Konservalangan tomat pastasi va likopin siri",
     "message_id": 1000
+  },
+  {
+    "datetime": "2026-09-25T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Un va non mahsulotlari",
+    "topic": "Fransuz baget noni",
+    "title": "Fransuz bageti haqida 4 ta fakt",
+    "message_id": 1003
   }
 ]
