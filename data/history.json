@@ -574,5 +574,13 @@
     "topic": "Ruibos (Rooibos) choyi",
     "title": "Ruibos choyi haqida 4 ta hayratlanarli fakt",
     "message_id": 1012
+  },
+  {
+    "datetime": "2026-09-27T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Mol go'shti",
+    "topic": "Mol go'shtini pishirishdan oldin tuzlash (dry brining) va sirtini quritish ilmi",
+    "title": "Mol go'shtini tuzlash va quritish ilmi",
+    "message_id": 1019
   }
 ]
