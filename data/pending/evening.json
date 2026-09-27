@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1024,
+  "topic": "Qora murch (Piper nigrum)",
+  "category": "Ziravorlar va kraviy o'tlar",
+  "rubric": "facts",
+  "published_at": "2026-09-27T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-09-27T20:00:02+05:00",
+  "quiz": {
+    "question": "Oshxonamizdagi qora, yashil va oq murch haqidagi qaysi tasdiq to‘g‘ri?",
+    "options": [
+      "Ular uch xil boshqa-boshqa daraxtda o‘sadi",
+      "Barchasi bitta o‘simlik mevasining turli bosqichlaridir",
+      "Oq murch faqat kimyoviy yo‘l bilan olinadi",
+      "Yashil murch faqat Yevropada yetishtiriladi"
+    ],
+    "correct_index": 1,
+    "explanation": "Qora, yashil va oq murch — 'Piper nigrum' nomli bitta liana mevasining pishish va qayta ishlash bosqichlaridir."
+  }
+}
