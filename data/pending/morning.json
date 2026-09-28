@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1027,
+  "topic": "Quruq bolalar sutli aralashmasi (formula)",
+  "category": "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)",
+  "rubric": "useful",
+  "published_at": "2026-09-28T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-09-28T15:00:01+05:00",
+  "quiz": {
+    "question": "Ochilgan quruq bolalar sutli aralashmasini qayerda va qancha muddat saqlash to‘g‘ri hisoblanadi?",
+    "options": [
+      "Muzlatgichda, 6 oy davomida",
+      "Xona haroratidagi quruq javonda, 30 kungacha",
+      "Muzlatgichda, 1 oy davomida",
+      "Oyna ostida quyosh tushadigan joyda, 15 kun"
+    ],
+    "correct_index": 1,
+    "explanation": "Muzlatgichdagi namlik kukunni buzadi. Ochilgan aralashmani xona haroratida, quruq joyda maksimal 30 kun saqlash tavsiya etiladi."
+  }
+}
