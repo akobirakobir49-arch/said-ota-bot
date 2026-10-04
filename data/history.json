@@ -606,5 +606,13 @@
     "topic": "Bulg'or qalampiri (Sweet Bell Pepper)",
     "title": "Bulg'or qalampiri haqida 4 ta hayratlanarli fakt",
     "message_id": 1030
+  },
+  {
+    "datetime": "2026-10-04T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "Tovuq go'shti va parrandachilikning hayratli tarixi hamda global rekordlari",
+    "title": "Tovuq go'shti va parrandachilik tarixi va rekordlari",
+    "message_id": 1050
   }
 ]

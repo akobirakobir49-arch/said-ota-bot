@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1050,
+  "topic": "Tovuq go'shti va parrandachilikning hayratli tarixi hamda global rekordlari",
+  "category": "Tovuq go'shti va parranda",
+  "rubric": "facts",
+  "published_at": "2026-10-04T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-04T20:00:02+05:00",
+  "quiz": {
+    "question": "Qadimgi Misrda harorat o‘lchagichlar bo‘lmagan davrda tuxum issiqligi qanday tekshirilgan?",
+    "options": [
+      "Suvga solib ko‘rish orqali",
+      "Yuz va qovoq terisiga bosish orqali",
+      "Quyosh nuriga tutib ko‘rish orqali",
+      "Qumga ko‘mib haroratini sezish orqali"
+    ],
+    "correct_index": 1,
+    "explanation": "Misrlik ustalar harorat o‘lchagichsiz davrda tuxum issiqligini yuz va qovoq terisiga bosib tekshirganlar va millionlab jo‘jalar ochirganlar."
+  }
+}
