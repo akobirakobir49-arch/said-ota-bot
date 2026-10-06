@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1059,
+  "topic": "Muzlatilgan brokkoli va xardal (gorchitsa) kukuni siri",
+  "category": "Muzlatilgan mahsulotlar",
+  "rubric": "useful",
+  "published_at": "2026-10-06T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-06T15:00:01+05:00",
+  "quiz": {
+    "question": "Muzlatilgan brokkolidagi foydali moddalar so‘rilishini deyarli 5 baravargacha oshirish uchun unga nima qo‘shish tavsiya etiladi?",
+    "options": [
+      "Bir qoshiq o‘simlik yog‘i",
+      "Bir chimdim quruq xardal (gorchitsa) kukuni",
+      "Bir necha tomchi limon sharbati",
+      "Bozor tuzi va murch"
+    ],
+    "correct_index": 1,
+    "explanation": "Xardal tarkibidagi ferment brokkolidagi birikmalarni faol antioksidantga aylantirishga yordam beradi va so‘rilishini keskin oshiradi."
+  }
+}
