@@ -638,5 +638,13 @@
     "topic": "Muzlatilgan brokkoli va xardal (gorchitsa) kukuni siri",
     "title": "Muzlatilgan brokkoli va xardal kukuni siri",
     "message_id": 1059
+  },
+  {
+    "datetime": "2026-10-06T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Konservalar va tayyor mahsulotlar",
+    "topic": "Konservalangan yashil noxat",
+    "title": "Konservalangan yashil noxat haqida qiziqarli faktlar",
+    "message_id": 1062
   }
 ]
