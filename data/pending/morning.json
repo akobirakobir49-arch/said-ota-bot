@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1068,
+  "topic": "Tabiiy xamirturushli (sourdough) non va fitin kislotasi ilmi",
+  "category": "Un va non mahsulotlari",
+  "rubric": "useful",
+  "published_at": "2026-10-08T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-08T15:00:02+05:00",
+  "quiz": {
+    "question": "Tabiiy xamirturushli xamirda fitin kislotasi qanchagacha parchalanishi mumkin?",
+    "options": [
+      "Atigi 15% gacha",
+      "38% gacha",
+      "90% gacha",
+      "Umuman parchalanmaydi"
+    ],
+    "correct_index": 2,
+    "explanation": "Sekin fermentatsiyalangan tabiiy xamirturushli xamirda fitin kislotasi 90% gacha parchalanadi va minerallar so‘rilishi ortadi."
+  }
+}

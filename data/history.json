@@ -654,5 +654,13 @@
     "topic": "Kartoshka va piyozni bir joyda saqlash xatosi: Qishki g'amlash va etilen gazi ilmi",
     "title": "Kartoshka va piyozni saqlash siri",
     "message_id": 1065
+  },
+  {
+    "datetime": "2026-10-08T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Un va non mahsulotlari",
+    "topic": "Tabiiy xamirturushli (sourdough) non va fitin kislotasi ilmi",
+    "title": "Tabiiy xamirturushli non va minerallar so'rilishi",
+    "message_id": 1068
   }
 ]
