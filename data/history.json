@@ -670,5 +670,13 @@
     "topic": "Issiq kakao va kakao kukuni",
     "title": "Kakao haqida 4 ta hayratlanarli fakt",
     "message_id": 1074
+  },
+  {
+    "datetime": "2026-10-09T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Sarimsoqpiyoz va «10 daqiqa qoidasi»",
+    "title": "Sarimsoq va 10 daqiqa qoidasi",
+    "message_id": 1090
   }
 ]

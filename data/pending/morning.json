@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1090,
+  "topic": "Sarimsoqpiyoz va «10 daqiqa qoidasi»",
+  "category": "Sabzavotlar va ko'katlar",
+  "rubric": "useful",
+  "published_at": "2026-10-09T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-09T15:00:01+05:00",
+  "quiz": {
+    "question": "Sarimsoqdagi foydali allitsin moddasi to‘liq hosil bo‘lishi uchun uni ezgandan so‘ng necha daqiqa kutish kerak?",
+    "options": [
+      "1 daqiqa",
+      "5 daqiqa",
+      "10 daqiqa",
+      "30 daqiqa"
+    ],
+    "correct_index": 2,
+    "explanation": "Ezilgan sarimsoq 10 daqiqa xona haroratida tursa, kimyoviy reaksiya to‘liq yakunlanadi va allitsin issiqlikka chidamli bo‘ladi."
+  }
+}
