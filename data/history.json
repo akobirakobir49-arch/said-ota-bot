@@ -686,5 +686,13 @@
     "topic": "Sharq xurmosi (Kaki)",
     "title": "Sharq xurmosi haqida 4 ta fakt",
     "message_id": 1093
+  },
+  {
+    "datetime": "2026-10-10T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Quruq mevalar va yong'oqlar",
+    "topic": "Olxo'ri qoqisi (Chernosliv) va suyak salomatligi",
+    "title": "Olxo'ri qoqisi va suyak salomatligi",
+    "message_id": 1096
   }
 ]

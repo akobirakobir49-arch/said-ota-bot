@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1096,
+  "topic": "Olxo'ri qoqisi (Chernosliv) va suyak salomatligi",
+  "category": "Quruq mevalar va yong'oqlar",
+  "rubric": "useful",
+  "published_at": "2026-10-10T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-10T15:00:01+05:00",
+  "quiz": {
+    "question": "Tadqiqotlarga ko‘ra, suyak zichligini saqlash uchun kuniga qancha chernosliv yeyish tavsiya etiladi?",
+    "options": [
+      "100 gramm (10-12 dona)",
+      "200 gramm (bir piyola)",
+      "50 gramm (5-6 dona)",
+      "15 gramm (1-2 dona)"
+    ],
+    "correct_index": 2,
+    "explanation": "Klinik tadqiqotda kuniga 50 gramm (5-6 dona) chernosliv yeganlarda chanoq-son suyagi zichligi to‘liq saqlanib qolgan."
+  }
+}
