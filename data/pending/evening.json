@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1099,
+  "topic": "Zaytun yog'i",
+  "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+  "rubric": "facts",
+  "published_at": "2026-10-10T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-10T20:00:02+05:00",
+  "quiz": {
+    "question": "Gretsiyadagi hali ham hosil berayotgan mashhur Vouves zaytun daraxti necha yoshda?",
+    "options": [
+      "1 000 yillik",
+      "2 000 yillik",
+      "3 000 yildan oshgan",
+      "5 000 yillik"
+    ],
+    "correct_index": 2,
+    "explanation": "Gretsiyadagi Vouves zaytun daraxti 3 000 yildan oshgan bo‘lishiga qaramay, hali ham har yili hosil beradi."
+  }
+}
