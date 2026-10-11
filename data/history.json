@@ -710,5 +710,13 @@
     "topic": "Mol go'shtidagi kollagen va sekin pishirish (slow cooking) ilmi",
     "title": "Mol go'shtini yumshoq pishirish siri va sekin pishirish ilmi",
     "message_id": 1102
+  },
+  {
+    "datetime": "2026-10-11T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shti",
+    "title": "Qo'y go'shti haqida qiziqarli faktlar",
+    "message_id": 1105
   }
 ]
