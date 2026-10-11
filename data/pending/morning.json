@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1102,
+  "topic": "Mol go'shtidagi kollagen va sekin pishirish (slow cooking) ilmi",
+  "category": "Mol go'shti",
+  "rubric": "useful",
+  "published_at": "2026-10-11T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-11T15:00:02+05:00",
+  "quiz": {
+    "question": "Mol go‘shti baland olovda (100°C da) shiddat bilan qaynatilganda nima sodir bo‘ladi?",
+    "options": [
+      "Kollagen tezroq erib, go‘sht darhol yumshaydi",
+      "Mushak tolalari siqilib, go‘sht qattiqlashadi",
+      "Go‘sht tarkibidagi namlik ikki baravar ortadi",
+      "Bulyon quyuqlashib, ipakdek mayin bo‘lib qoladi"
+    ],
+    "correct_index": 1,
+    "explanation": "Baland haroratda mushak tolalari keskin qisqarib, suvni siqib chiqaradi va go‘shtni qattiqlashtiradi. Yumshoqlik siri — past haroratda sekin pishirishda."
+  }
+}
