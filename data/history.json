@@ -726,5 +726,13 @@
     "topic": "Konservalangan tunets baliqlari: O'z sharbatidagi va yog'dagi konserva ilmi",
     "title": "Tunets konservasi va Omega-3",
     "message_id": 1108
+  },
+  {
+    "datetime": "2026-10-12T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Anor (Pomegranate)",
+    "title": "Bilarmidingiz? — Anor haqida faktlar",
+    "message_id": 1111
   }
 ]

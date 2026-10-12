@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1111,
+  "topic": "Anor (Pomegranate)",
+  "category": "Mevalar (mavsumiy va import)",
+  "rubric": "facts",
+  "published_at": "2026-10-12T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-12T20:00:02+05:00",
+  "quiz": {
+    "question": "Shoh Sulaymon qirollik tojining dizaynini anorning qaysi qismidan nusxa olib yaratgan?",
+    "options": [
+      "Uning suvli va qizil donachalaridan",
+      "Mevaning tepasidagi tojsimon kosachasidan",
+      "Anor daraxtining shoxlaridan",
+      "Anorning qattiq va qalin po‘stlog‘idan"
+    ],
+    "correct_index": 1,
+    "explanation": "Qadimgi manbalarga ko‘ra, Shoh Sulaymon o‘z tojini anor mevasining tojsimon kosachasidan (calyx) nusxa olib yasatgan."
+  }
+}
