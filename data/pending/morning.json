@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1108,
+  "topic": "Konservalangan tunets baliqlari: O'z sharbatidagi va yog'dagi konserva ilmi",
+  "category": "Konservalar va tayyor mahsulotlar",
+  "rubric": "useful",
+  "published_at": "2026-10-12T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-12T15:00:01+05:00",
+  "quiz": {
+    "question": "Yog‘li tunets konservasining yog‘i to‘kib tashlanganda Omega-3 kislotalarining necha foizi yo‘qotiladi?",
+    "options": [
+      "10% dan 20% gacha",
+      "25% dan 35% gacha",
+      "50% dan 75% gacha",
+      "90% dan ortig‘i"
+    ],
+    "correct_index": 2,
+    "explanation": "Yog‘li tunets konservasining yog‘i suzib tashlanganda, unda erigan foydali Omega-3 kislotalarining 50% dan 75% gacha qismi ham chiqindiga ketadi."
+  }
+}
