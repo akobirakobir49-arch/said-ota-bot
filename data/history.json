@@ -742,5 +742,13 @@
     "topic": "No'xat va dukkaklilarni sodali suvda ivitish ilmi",
     "title": "No'xat va dukkaklilarni sodali suvda ivitish sirlari",
     "message_id": 1114
+  },
+  {
+    "datetime": "2026-10-13T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+    "topic": "Parmigiano Reggiano (Parmezan pishloqi)",
+    "title": "Parmigiano Reggiano haqida 4 ta fakt",
+    "message_id": 1117
   }
 ]
