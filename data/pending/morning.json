@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1114,
+  "topic": "No'xat va dukkaklilarni sodali suvda ivitish ilmi",
+  "category": "Yormalar va dukkaklilar (guruch, grechka, no'xat, loviya)",
+  "rubric": "useful",
+  "published_at": "2026-10-13T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-13T15:00:01+05:00",
+  "quiz": {
+    "question": "Nega pishirish sodasini ovqat pishayotgan qozonga emas, aynan ivitish suviga qo‘shish kerak?",
+    "options": [
+      "Qozonga solinsa, no‘xat umuman pishmay qattiq bo‘lib qoladi",
+      "Qozonga solinsa, taomda noxush ta’m paydo bo‘ladi va vitaminlar yo‘qoladi",
+      "Qozonga solinsa, suvning rangi to‘q qora bo‘lib ketadi",
+      "Qozonga solinsa, taomning hidi mutlaqo yo‘qoladi"
+    ],
+    "correct_index": 1,
+    "explanation": "Sodani pishirish paytida qo‘shish taomda sovunsimon ta’m beradi va B1 vitaminini parchalanib ketishiga olib keladi."
+  }
+}

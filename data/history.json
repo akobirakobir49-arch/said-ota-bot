@@ -734,5 +734,13 @@
     "topic": "Anor (Pomegranate)",
     "title": "Bilarmidingiz? — Anor haqida faktlar",
     "message_id": 1111
+  },
+  {
+    "datetime": "2026-10-13T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Yormalar va dukkaklilar (guruch, grechka, no'xat, loviya)",
+    "topic": "No'xat va dukkaklilarni sodali suvda ivitish ilmi",
+    "title": "No'xat va dukkaklilarni sodali suvda ivitish sirlari",
+    "message_id": 1114
   }
 ]
