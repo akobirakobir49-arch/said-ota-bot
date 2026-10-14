@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1123,
+  "topic": "Za'faron (Saffron) — dunyoning eng qimmatli kuzgi ziravori",
+  "category": "Ziravorlar va kraviy o'tlar",
+  "rubric": "facts",
+  "published_at": "2026-10-14T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-14T20:00:01+05:00",
+  "quiz": {
+    "question": "1 kg za'faron ziravorini yig'ib olish uchun qancha gul talab etiladi?",
+    "options": [
+      "1 000 - 5 000 ta",
+      "10 000 - 20 000 ta",
+      "150 000 - 200 000 ta",
+      "1 milliondan ortiq"
+    ],
+    "correct_index": 2,
+    "explanation": " Har bir za'faron gulida bor-yo'g'i 3 dona qizil ipcha bo'ladi. 1 kg tayyor ziravor olish uchun 150 000 dan 200 000 tagacha gulning ipchalarini ajratib olish kerak."
+  }
+}
