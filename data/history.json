@@ -750,5 +750,13 @@
     "topic": "Parmigiano Reggiano (Parmezan pishloqi)",
     "title": "Parmigiano Reggiano haqida 4 ta fakt",
     "message_id": 1117
+  },
+  {
+    "datetime": "2026-10-14T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Un va non mahsulotlari",
+    "topic": "Nonni muzlatish va qayta isitish ilmi (Chidamli kraxmal va glikemik indeks)",
+    "title": "Muzlatilgan non va chidamli kraxmal faydalari",
+    "message_id": 1120
   }
 ]
