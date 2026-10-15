@@ -766,5 +766,13 @@
     "topic": "Za'faron (Saffron) — dunyoning eng qimmatli kuzgi ziravori",
     "title": "Za'faron haqida 4 ta hayratlanarli fakt",
     "message_id": 1123
+  },
+  {
+    "datetime": "2026-10-15T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Sariyog' va Sariq yog' (Ghee): Tutash nuqtasi, qovurish ilmi va sut oqsillari siri",
+    "title": "Sariyog' va Sariq yog' farqlari",
+    "message_id": 1126
   }
 ]

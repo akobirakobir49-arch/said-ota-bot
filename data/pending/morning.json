@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1126,
+  "topic": "Sariyog' va Sariq yog' (Ghee): Tutash nuqtasi, qovurish ilmi va sut oqsillari siri",
+  "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+  "rubric": "useful",
+  "published_at": "2026-10-15T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-15T15:00:02+05:00",
+  "quiz": {
+    "question": "Sariq yog‘ning (Ghee) oddiy sariyog‘dan asosiy pazandalik ustunligi nimada?",
+    "options": [
+      "Tarkibida suv va oqsil bo‘lmagani uchun yuqori haroratda yonmaydi",
+      "Faqat sovuq yeguliklar va salatlarga qo‘shish uchun ishlatiladi",
+      "Tarkibida suv ko‘p bo‘lgani uchun tezroq eriydi",
+      "Faqat past haroratda va sekin qovurishga mo‘ljallangan"
+    ],
+    "correct_index": 0,
+    "explanation": "Sariq yog‘dan suv va oqsillar ajratilgani sababli u 232–252°C haroratgacha dosh beradi va qovurishda yonmaydi."
+  }
+}
