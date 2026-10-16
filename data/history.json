@@ -782,5 +782,13 @@
     "topic": "Earl Grey (Bergamotli qora choy)",
     "title": "Earl Grey choyi haqida 4 ta fakt",
     "message_id": 1129
+  },
+  {
+    "datetime": "2026-10-16T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mol go'shti",
+    "topic": "Mol go'shtidagi gem-temir va taomdan so'ng choy ichish ilmi",
+    "title": "Mol go'shti va choy ichish odati",
+    "message_id": 1132
   }
 ]
