@@ -790,5 +790,13 @@
     "topic": "Mol go'shtidagi gem-temir va taomdan so'ng choy ichish ilmi",
     "title": "Mol go'shti va choy ichish odati",
     "message_id": 1132
+  },
+  {
+    "datetime": "2026-10-16T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shti va qo'ychilik sirlari",
+    "title": "Qo'y go'shti va qo'ychilik sirlari",
+    "message_id": 1135
   }
 ]
