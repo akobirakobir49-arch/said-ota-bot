@@ -798,5 +798,13 @@
     "topic": "Qo'y go'shti va qo'ychilik sirlari",
     "title": "Qo'y go'shti va qo'ychilik sirlari",
     "message_id": 1135
+  },
+  {
+    "datetime": "2026-10-17T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Qizilcha (svekla) va uning nitratlar ilmi",
+    "title": "Qizilchani pishirish va nitratlar foydasi",
+    "message_id": 1138
   }
 ]
