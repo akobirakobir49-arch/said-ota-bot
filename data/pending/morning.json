@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1149,
+  "topic": "Pishloqdagi mog'or (плесень) ilmi: Qaysi birini kesib yeyish mumkin va qaysinisini tashlab yuborish kerak?",
+  "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+  "rubric": "useful",
+  "published_at": "2026-10-18T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-18T15:00:02+05:00",
+  "quiz": {
+    "question": "Qattiq pishloqda (masalan, Parmezanda) kichik mog'or dog'i paydo bo'lsa, nima qilish kerak?",
+    "options": [
+      "Mahsulotni darhol butunlay tashlab yuborish kerak",
+      "Mog'or dog'i atrofidan kamida 2.5 sm masofada kesib tashlash kerak",
+      "Pishloqni mikrotolqinli pechda qizdirib eritish kerak",
+      "Faqat sirtidagi mog'or qismini yengil qirib tashlash kifoya"
+    ],
+    "correct_index": 1,
+    "explanation": "Qattiq pishloq zich bo'lgani uchun mog'or ildizlari chuqur kir tolmaydi. Dog' atrofidan 2.5 sm kesib olinsa, qolgani xavfsiz bo'ladi."
+  }
+}
