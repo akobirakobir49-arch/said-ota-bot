@@ -822,5 +822,13 @@
     "topic": "Pishloqdagi mog'or (плесень) ilmi: Qaysi birini kesib yeyish mumkin va qaysinisini tashlab yuborish kerak?",
     "title": "Pishloqdagi mog'or ilmi",
     "message_id": 1149
+  },
+  {
+    "datetime": "2026-10-18T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+    "topic": "Tabiiy asal va uning abadiy saqlanish siri",
+    "title": "Tabiiy asal va uning abadiy saqlanish siri haqida 4 ta fakt",
+    "message_id": 1164
   }
 ]
