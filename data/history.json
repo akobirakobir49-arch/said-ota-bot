@@ -830,5 +830,13 @@
     "topic": "Tabiiy asal va uning abadiy saqlanish siri",
     "title": "Tabiiy asal va uning abadiy saqlanish siri haqida 4 ta fakt",
     "message_id": 1164
+  },
+  {
+    "datetime": "2026-10-19T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Kivi mevasidagi aktinidin fermenti va uning oshxonadagi kimyoviy sirlari",
+    "title": "Kivi va aktinidin fermenti sirlari",
+    "message_id": 1167
   }
 ]
