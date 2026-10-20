@@ -846,5 +846,13 @@
     "topic": "Haqiqiy Seylon dolchini va uning sifat sirlari",
     "title": "Haqiqiy Seylon dolchini haqida faktlar va sifat sirlari",
     "message_id": 1171
+  },
+  {
+    "datetime": "2026-10-20T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Paxta yog'i, gossipol va «dog'lash» ilmi",
+    "title": "Paxta yog'ini dog'lash sirlari",
+    "message_id": 1174
   }
 ]
