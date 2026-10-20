@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1178,
+  "topic": "Zanjabil (Zingiber officinale)",
+  "category": "Ziravorlar va kraviy o'tlar",
+  "rubric": "facts",
+  "published_at": "2026-10-20T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-20T20:00:02+05:00",
+  "quiz": {
+    "question": "XVI asrda mashhur \"zanjabilli odamcha\" pechenyelarini birinchi bo‘lib kim o‘ylab topgan?",
+    "options": [
+      "Sharq tabiblari",
+      "Angliya qirolichasi Yelizaveta I",
+      "O‘rta asr yevropalik savdogarlar",
+      "Nemis novvoylari"
+    ],
+    "correct_index": 1,
+    "explanation": "Qirolicha Yelizaveta I saroy oshpazlariga martabali mehmonlar va elchilar ko'rinishida zanjabilli pechenyelar pishirishni buyurgan."
+  }
+}
