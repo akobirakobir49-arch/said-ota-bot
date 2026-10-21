@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1181,
+  "topic": "Unni elash ilmi va xamirdagi kislorod kimyosi",
+  "category": "Un va non mahsulotlari",
+  "rubric": "useful",
+  "published_at": "2026-10-21T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-21T15:00:02+05:00",
+  "quiz": {
+    "question": "Un elanganda xamir nima sababdan yanada g‘ovak va yumshoq bo‘lib pishadi?",
+    "options": [
+      "Un sovub, suvni umuman so‘rmay qo‘ygani uchun",
+      "Un kislorod bilan to‘yinib, kleykovina to‘ri mustahkamlangani uchun",
+      "Unning vazni ikki baravar og‘irlashgani uchun",
+      "Unga ortiqcha shakar va tuz aralashgani uchun"
+    ],
+    "correct_index": 1,
+    "explanation": "Elashda un kislorod bilan to‘yinib, kleykovina bog‘larini mustahkamlaydi va xamirning gaz tutib qolish qobiliyatini oshiradi."
+  }
+}

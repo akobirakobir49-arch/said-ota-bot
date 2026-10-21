@@ -862,5 +862,13 @@
     "topic": "Zanjabil (Zingiber officinale)",
     "title": "Zanjabil haqida 4 ta hayratlanarli fakt",
     "message_id": 1178
+  },
+  {
+    "datetime": "2026-10-21T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Un va non mahsulotlari",
+    "topic": "Unni elash ilmi va xamirdagi kislorod kimyosi",
+    "title": "Unni elash ilmi va xamirdagi kislorod kimyosi",
+    "message_id": 1181
   }
 ]
