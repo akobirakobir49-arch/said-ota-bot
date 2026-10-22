@@ -878,5 +878,13 @@
     "topic": "Qovoq",
     "title": "Qovoq haqida 4 ta hayratlanarli fakt",
     "message_id": 1184
+  },
+  {
+    "datetime": "2026-10-22T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Tuxum",
+    "topic": "Pishirilgan tuxumni po'stidan oson archish ilmi",
+    "title": "Pishirilgan tuxumni oson archish siri",
+    "message_id": 1187
   }
 ]

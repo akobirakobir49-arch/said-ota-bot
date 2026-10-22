@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1187,
+  "topic": "Pishirilgan tuxumni po'stidan oson archish ilmi",
+  "category": "Tuxum",
+  "rubric": "useful",
+  "published_at": "2026-10-22T09:00:02+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-10-22T15:00:02+05:00",
+  "quiz": {
+    "question": "Tuxum po‘stlog‘i oqsilga yopishib qolmasligi uchun uni qanday suvga solib qaynatish kerak?",
+    "options": [
+      "Sovuq suvga solib, sekin qaynatish",
+      "To‘g‘ridan-to‘g‘ri qaynab turgan suvga solish",
+      "Muzday suvga soda solib qaynatish",
+      "Sirka solingan iliq suvga solish"
+    ],
+    "correct_index": 1,
+    "explanation": "Qaynoq suv harorat shoki hosil qilib, oqsilni pardadan ajratadi. Sovuq suvda sekin isish esa oqsilni pardaga yopishtirib qo‘yadi."
+  }
+}
