@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1190,
+  "topic": "Qo'y go'shti",
+  "category": "Qo'y go'shti",
+  "rubric": "facts",
+  "published_at": "2026-10-22T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-22T20:00:02+05:00",
+  "quiz": {
+    "question": "Islandiya qo‘y go‘shtining o‘ziga xos tabiiy va xushbo‘y mazaga ega bo‘lishiga nima sabab bo‘ladi?",
+    "options": [
+      "Ularning maxsus yopiq fermalarda saqlanishi",
+      "Yozda tog‘larda yovvoyi chechak va mevalar bilan oziqlanishi",
+      "Go‘shtga pishirish jarayonida maxsus dengiz tuzlari berilishi",
+      "Go‘shtning dengiz bo‘yidagi omborlarda saqlanishi"
+    ],
+    "correct_index": 1,
+    "explanation": "Islandiya qo‘ylari yozda tog‘li yaylovlarda erkin yurib, yovvoyi chechak hamda mevalar yegani uchun go‘shti tabiiy xushbo‘y bo‘ladi."
+  }
+}

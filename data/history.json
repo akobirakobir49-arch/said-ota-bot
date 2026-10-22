@@ -886,5 +886,13 @@
     "topic": "Pishirilgan tuxumni po'stidan oson archish ilmi",
     "title": "Pishirilgan tuxumni oson archish siri",
     "message_id": 1187
+  },
+  {
+    "datetime": "2026-10-22T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shti",
+    "title": "Qo'y go'shti haqida bilarmidingiz post va test",
+    "message_id": 1190
   }
 ]
