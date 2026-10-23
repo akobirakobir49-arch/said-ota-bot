@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1196,
+  "topic": "Olma va uzoq muddatli saqlash ilmi",
+  "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+  "rubric": "facts",
+  "published_at": "2026-10-23T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-23T20:00:01+05:00",
+  "quiz": {
+    "question": "Omborxonalarda olmaning 10-12 oy davomida yangidek saqlanishiga asosiy sabab nima?",
+    "options": [
+      "Meva doimiy ravishda kimyoviy moddalar bilan yuvilishi",
+      "Kislorod kamaytirilib, 'nafas olish' metabolizmi to‘xtatilishi",
+      "Olmaning ultrabinafsha nurlar ostida saqlanishi",
+      "Mevaning noldan juda past haroratda muzlatilishi"
+    ],
+    "correct_index": 1,
+    "explanation": "Kislorod darajasi 1-2% gacha tushirilganda olmaning 'nafas olish' metabolizmi amalda to‘xtaydi va u uzoq muddat yangiligini yo‘qotmaydi."
+  }
+}

@@ -902,5 +902,13 @@
     "topic": "Konservalangan baliq (sardina, skumbriya) suyaklari va kalsiy ilmi",
     "title": "Konservalangan baliq suyaklari va kalsiy",
     "message_id": 1193
+  },
+  {
+    "datetime": "2026-10-23T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+    "topic": "Olma va uzoq muddatli saqlash ilmi",
+    "title": "Olma va uzoq muddatli saqlash ilmi",
+    "message_id": 1196
   }
 ]
