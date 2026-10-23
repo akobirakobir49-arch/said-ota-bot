@@ -894,5 +894,13 @@
     "topic": "Qo'y go'shti",
     "title": "Qo'y go'shti haqida bilarmidingiz post va test",
     "message_id": 1190
+  },
+  {
+    "datetime": "2026-10-23T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Konservalar va tayyor mahsulotlar",
+    "topic": "Konservalangan baliq (sardina, skumbriya) suyaklari va kalsiy ilmi",
+    "title": "Konservalangan baliq suyaklari va kalsiy",
+    "message_id": 1193
   }
 ]
