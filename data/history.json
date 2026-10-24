@@ -910,5 +910,13 @@
     "topic": "Olma va uzoq muddatli saqlash ilmi",
     "title": "Olma va uzoq muddatli saqlash ilmi",
     "message_id": 1196
+  },
+  {
+    "datetime": "2026-10-24T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "Xom tovuq go'shtini jo'mrak suvida yuvish xatosi va bakteriya aerozoli ilmi",
+    "title": "Xom tovuqni yuvish xatosi va to'g'ri gigiyena",
+    "message_id": 1199
   }
 ]
