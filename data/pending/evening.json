@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1202,
+  "topic": "Losos baliqlari (Salmon)",
+  "category": "Baliq va dengiz mahsulotlari",
+  "rubric": "facts",
+  "published_at": "2026-10-24T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-24T20:00:02+05:00",
+  "quiz": {
+    "question": "Losos baliqlari minglab kilometr uzoqlikdan o‘zi tug‘ilgan daryoni qanday qilib adashmay topadi?",
+    "options": [
+      "Quyosh va yulduzlar joylashuviga qarab",
+      "Yerning magnit maydoni va hid xotirasi orqali",
+      "Suv oqimining haroratini o‘lchash orqali",
+      "Boshqa kattaroq baliqlarga ergashib"
+    ],
+    "correct_index": 1,
+    "explanation": "Losos to‘qimalaridagi mikroskopik kristallar Yer magnit maydonini sezadi hamda daryo hidini aniq eslab qoladi."
+  }
+}
