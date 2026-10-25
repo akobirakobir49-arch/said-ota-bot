@@ -926,5 +926,13 @@
     "topic": "Losos baliqlari (Salmon)",
     "title": "Losos baliqlari haqida hayratlanarli faktlar",
     "message_id": 1202
+  },
+  {
+    "datetime": "2026-10-25T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Quruq mevalar va yong'oqlar",
+    "topic": "Yong'oqlarni suvda ivitish («aktivatsiya») ilmi va afsonalari",
+    "title": "Yong'oqlarni suvda ivitish siri va tavsiyalar",
+    "message_id": 1205
   }
 ]
