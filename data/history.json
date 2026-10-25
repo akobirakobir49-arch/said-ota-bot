@@ -934,5 +934,13 @@
     "topic": "Yong'oqlarni suvda ivitish («aktivatsiya») ilmi va afsonalari",
     "title": "Yong'oqlarni suvda ivitish siri va tavsiyalar",
     "message_id": 1205
+  },
+  {
+    "datetime": "2026-10-25T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Kungaboqar yog'i",
+    "title": "Kungaboqar yog'i haqida 4 ta hayratlanarli fakt",
+    "message_id": 1208
   }
 ]

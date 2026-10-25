@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1208,
+  "topic": "Kungaboqar yog'i",
+  "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+  "rubric": "facts",
+  "published_at": "2026-10-25T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-10-25T20:00:01+05:00",
+  "quiz": {
+    "question": "1 litr toza kungaboqar yog'ini ajratib olish uchun taxminan nechta yirik gul hosili talab etiladi?",
+    "options": [
+      "5-10 ta gul",
+      "10-15 ta gul",
+      "20-30 ta gul",
+      "50-60 ta gul"
+    ],
+    "correct_index": 2,
+    "explanation": "1 litr yog' uchun 2,5-3 kg urug' kerak bo'ladi, bu esa taxminan 20 tadan 30 tagacha yirik kungaboqar gulining hosiliga teng."
+  }
+}
