@@ -942,5 +942,13 @@
     "topic": "Kungaboqar yog'i",
     "title": "Kungaboqar yog'i haqida 4 ta hayratlanarli fakt",
     "message_id": 1208
+  },
+  {
+    "datetime": "2026-10-26T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+    "topic": "Pishirilgan guruch va palovni xonada qoldirish xatosi: Bacillus cereus va «Qayta isitilgan guruch sindromi» ilmi",
+    "title": "Palov va guruchni xonada qoldirish xatosi",
+    "message_id": 1213
   }
 ]
