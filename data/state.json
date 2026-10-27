@@ -116,6 +116,7 @@
     "morning": "published"
   },
   "2026-10-27": {
+    "evening": "skipped",
     "morning": "skipped"
   }
 }
