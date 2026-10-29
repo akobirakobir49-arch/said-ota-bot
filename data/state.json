@@ -1,8 +1,4 @@
 {
-  "2026-09-24": {
-    "evening": "published",
-    "morning": "published"
-  },
   "2026-09-25": {
     "evening": "published",
     "morning": "published"
@@ -117,6 +113,9 @@
   },
   "2026-10-28": {
     "evening": "skipped",
+    "morning": "skipped"
+  },
+  "2026-10-29": {
     "morning": "skipped"
   }
 }
