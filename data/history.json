@@ -958,5 +958,13 @@
     "topic": "Mol go'shti: Kosmos, tarix va rekordlar sirlari",
     "title": "Mol go'shti haqida qiziqarli faktlar",
     "message_id": 1221
+  },
+  {
+    "datetime": "2026-10-31T17:12:41+05:00",
+    "slot": "evening",
+    "category": "Choy va ichimliklar",
+    "topic": "Oblepixa (chakanda) choyi",
+    "title": "Oblepixa (chakanda) choyi haqida 4 ta qiziqarli fakt",
+    "message_id": 1224
   }
 ]
