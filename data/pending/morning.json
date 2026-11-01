@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1227,
+  "topic": "Rozmarin va go'shtni yuqori haroratda qovurishdagi kantserogenlar ilmi",
+  "category": "Ziravorlar va kraviy o'tlar",
+  "rubric": "useful",
+  "published_at": "2026-11-01T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-01T15:00:01+05:00",
+  "quiz": {
+    "question": "Tadqiqotlarga ko‘ra, rozmarin qovurilgan go‘shtda zararli moddalar paydo bo‘lishini necha foizgacha kamaytirishi mumkin?",
+    "options": [
+      "30% gacha",
+      "50% gacha",
+      "90% gacha",
+      "100%"
+    ],
+    "correct_index": 2,
+    "explanation": "Kanzas shtati universiteti olimlari aniqlashicha, rozmarin go‘sht sirtida zararli birikmalar paydo bo‘lishini 90% gacha to‘xtatishi mumkin."
+  }
+}
