@@ -982,5 +982,13 @@
     "topic": "Muzlatilgan mahsulotlar ilmi va tarixi",
     "title": "Muzlatilgan mahsulotlar tarixi va ilmi haqida 4 fakt",
     "message_id": 1230
+  },
+  {
+    "datetime": "2026-11-02T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shti va dumba yog'ining erish harorati hamda hazm bo'lish ilmi",
+    "title": "Dumba yog'i va qo'y go'shti hazmi siri",
+    "message_id": 1235
   }
 ]
