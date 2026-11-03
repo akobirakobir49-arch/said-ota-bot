@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1248,
+  "topic": "Kroassan (Croissant) sirlari",
+  "category": "Un va non mahsulotlari",
+  "rubric": "facts",
+  "published_at": "2026-11-03T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-03T20:00:02+05:00",
+  "quiz": {
+    "question": "Pazandachilik qoidalariga ko‘ra, klassik kroassan ichida roppa-rosa nechta qatlam hosil bo‘ladi?",
+    "options": [
+      "33 ta",
+      "55 ta",
+      "72 ta",
+      "100 ta"
+    ],
+    "correct_index": 1,
+    "explanation": "Xamir va sariyog‘ aniq ketma-ketlikda 3 marta buklanganda ichida roppa-rosa 55 ta ingichka qatlam hosil bo‘ladi."
+  }
+}

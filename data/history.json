@@ -1006,5 +1006,13 @@
     "topic": "Brokkoli pishirish ilmi: Sulforafan va xantal kukuni siri",
     "title": "Brokkolidan maksimum foyda olish siri",
     "message_id": 1245
+  },
+  {
+    "datetime": "2026-11-03T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Un va non mahsulotlari",
+    "topic": "Kroassan (Croissant) sirlari",
+    "title": "Kroassan sirlari va novvoylik faktlari",
+    "message_id": 1248
   }
 ]
