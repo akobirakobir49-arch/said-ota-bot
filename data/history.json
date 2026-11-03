@@ -998,5 +998,13 @@
     "topic": "Grechka (soxta don siri)",
     "title": "Grechka haqida 4 ta hayratlanarli fakt",
     "message_id": 1242
+  },
+  {
+    "datetime": "2026-11-03T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Brokkoli pishirish ilmi: Sulforafan va xantal kukuni siri",
+    "title": "Brokkolidan maksimum foyda olish siri",
+    "message_id": 1245
   }
 ]
