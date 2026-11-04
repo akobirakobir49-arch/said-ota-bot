@@ -1014,5 +1014,13 @@
     "topic": "Kroassan (Croissant) sirlari",
     "title": "Kroassan sirlari va novvoylik faktlari",
     "message_id": 1248
+  },
+  {
+    "datetime": "2026-11-04T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Mandarin va apelsindagi oq qatlam (Albedo) ilmi",
+    "title": "Mandarin va apelsindagi albedo tolalari foydasi",
+    "message_id": 1251
   }
 ]
