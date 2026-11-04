@@ -1022,5 +1022,13 @@
     "topic": "Mandarin va apelsindagi oq qatlam (Albedo) ilmi",
     "title": "Mandarin va apelsindagi albedo tolalari foydasi",
     "message_id": 1251
+  },
+  {
+    "datetime": "2026-11-04T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Mol go'shti",
+    "topic": "Mol go'shti: Vagyu va Kobe mo'jizasi",
+    "title": "Vagyu va Kobe go'shti haqida 4 ta fakt",
+    "message_id": 1254
   }
 ]
