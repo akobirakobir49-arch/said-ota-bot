@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1260,
+  "topic": "Balsamik sirka (Balsamico)",
+  "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+  "rubric": "facts",
+  "published_at": "2026-11-05T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-05T20:00:02+05:00",
+  "quiz": {
+    "question": "An’anaviy Modena balsamik sirkasi uchun maxsus 100 ml shisha idish dizaynini kim yaratgan?",
+    "options": [
+      "Enzo Ferrari",
+      "Jorjetto Jujaro",
+      "Leonardo da Vinchi",
+      "Djovanni Versache"
+    ],
+    "correct_index": 1,
+    "explanation": "1987-yilda mashhur avtomobil dizayneri Jorjetto Jujaro an’anaviy Modena sirkasi uchun yagona rasmiy shisha dizaynini ishlab chiqqan."
+  }
+}

@@ -1038,5 +1038,13 @@
     "topic": "Tuxumni saqlashdan oldin yuvish xatosi: Po'stloqdagi kutikula va g'ovaklar ilmi",
     "title": "Tuxumni saqlashdan oldin yuvish xatosi",
     "message_id": 1257
+  },
+  {
+    "datetime": "2026-11-05T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+    "topic": "Balsamik sirka (Balsamico)",
+    "title": "Balsamik sirka haqida hayratlanarli faktlar",
+    "message_id": 1260
   }
 ]
