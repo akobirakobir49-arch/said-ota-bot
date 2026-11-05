@@ -1030,5 +1030,13 @@
     "topic": "Mol go'shti: Vagyu va Kobe mo'jizasi",
     "title": "Vagyu va Kobe go'shti haqida 4 ta fakt",
     "message_id": 1254
+  },
+  {
+    "datetime": "2026-11-05T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Tuxum",
+    "topic": "Tuxumni saqlashdan oldin yuvish xatosi: Po'stloqdagi kutikula va g'ovaklar ilmi",
+    "title": "Tuxumni saqlashdan oldin yuvish xatosi",
+    "message_id": 1257
   }
 ]
