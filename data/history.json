@@ -1046,5 +1046,13 @@
     "topic": "Balsamik sirka (Balsamico)",
     "title": "Balsamik sirka haqida hayratlanarli faktlar",
     "message_id": 1260
+  },
+  {
+    "datetime": "2026-11-06T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Zig'ir yog'i kimyosi va to'g'ri iste'mol qilish ilmi",
+    "title": "Zig'ir yog'ini to'g'ri iste'mol qilish ilmi",
+    "message_id": 1263
   }
 ]
