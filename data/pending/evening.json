@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1266,
+  "topic": "Tovuq go'shti: Dinozavrlar davridan oshxonamizgacha bo'lgan kutilmagan tarix va biologik sirlar",
+  "category": "Tovuq go'shti va parranda",
+  "rubric": "facts",
+  "published_at": "2026-11-06T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-06T20:00:01+05:00",
+  "quiz": {
+    "question": "Molekulyar darajada tovuq qaysi qadimgi jonzotga eng yaqin tirik qarindosh hisoblanadi?",
+    "options": [
+      "Mamont",
+      "Tiranozavr (T-Rex)",
+      "Pterodaktil",
+      "Tritseratops"
+    ],
+    "correct_index": 1,
+    "explanation": "68 million yoshli Tiranozavr suyagidagi oqsil tahlili uning molekulyar tuzilishiga eng yaqin tirik jonzot tovuq ekanini ko'rsatgan."
+  }
+}

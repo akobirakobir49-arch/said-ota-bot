@@ -1054,5 +1054,13 @@
     "topic": "Zig'ir yog'i kimyosi va to'g'ri iste'mol qilish ilmi",
     "title": "Zig'ir yog'ini to'g'ri iste'mol qilish ilmi",
     "message_id": 1263
+  },
+  {
+    "datetime": "2026-11-06T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "Tovuq go'shti: Dinozavrlar davridan oshxonamizgacha bo'lgan kutilmagan tarix va biologik sirlar",
+    "title": "Tovuq go'shti haqida 4 ta hayratlanarli fakt",
+    "message_id": 1266
   }
 ]
