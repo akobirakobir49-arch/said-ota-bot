@@ -1062,5 +1062,13 @@
     "topic": "Tovuq go'shti: Dinozavrlar davridan oshxonamizgacha bo'lgan kutilmagan tarix va biologik sirlar",
     "title": "Tovuq go'shti haqida 4 ta hayratlanarli fakt",
     "message_id": 1266
+  },
+  {
+    "datetime": "2026-11-07T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Muzlatilgan mahsulotlar",
+    "topic": "Muzlatilgan go'sht va baliqni eritish (Defrosting) ilmi",
+    "title": "Muzlatilgan go'sht va baliqni to'g'ri eritish sirlari",
+    "message_id": 1269
   }
 ]
