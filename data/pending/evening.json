@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1278,
+  "topic": "Sabzi (Carrot)",
+  "category": "Sabzavotlar va ko'katlar",
+  "rubric": "facts",
+  "published_at": "2026-11-08T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-08T20:00:02+05:00",
+  "quiz": {
+    "question": "Nega qishda yig‘ib olingan sabzilar yozdagiga qaraganda shirinroq ta'mga ega bo‘ladi?",
+    "options": [
+      "Qishda sabzi kamroq suv so‘rgani uchun",
+      "Sovuqda sabzi o‘z kraxmalini shakarga aylantiradi",
+      "Qishki navlarga ko‘proq o‘g‘it beriladi",
+      "Quyosh nuri kamroq tushgani sababli"
+    ],
+    "correct_index": 1,
+    "explanation": "Sovuqda sabzi o‘z hujayralari muzlab qolmasligi uchun biologik 'antifriz' sifatida kraxmalni jadal ravishda shakarga aylantiradi."
+  }
+}

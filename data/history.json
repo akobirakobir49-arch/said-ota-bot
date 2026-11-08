@@ -1086,5 +1086,13 @@
     "topic": "Zira (Cuminum cyminum) va og'ir taomlarni hazm qilish kimyosi",
     "title": "Zira va yog'li taomlar hazmi",
     "message_id": 1275
+  },
+  {
+    "datetime": "2026-11-08T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Sabzi (Carrot)",
+    "title": "Sabzi haqida 4 ta hayratlanarli fakt",
+    "message_id": 1278
   }
 ]
