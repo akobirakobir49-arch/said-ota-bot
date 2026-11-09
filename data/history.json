@@ -1094,5 +1094,13 @@
     "topic": "Sabzi (Carrot)",
     "title": "Sabzi haqida 4 ta hayratlanarli fakt",
     "message_id": 1278
+  },
+  {
+    "datetime": "2026-11-09T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Un va non mahsulotlari",
+    "topic": "Qattiq bug'doy uni (Durum) va makaron ilmi: Oqsillar, glikemik indeks va «Al dente» siri",
+    "title": "Durum bug'doy va makaron pishirish siri",
+    "message_id": 1281
   }
 ]
