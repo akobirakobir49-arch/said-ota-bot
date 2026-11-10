@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1293,
+  "topic": "Ustritsa (Dengiz mollyuski)",
+  "category": "Baliq va dengiz mahsulotlari",
+  "rubric": "facts",
+  "published_at": "2026-11-10T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-10T20:00:02+05:00",
+  "quiz": {
+    "question": "Oshpazlik an'anasiga ko‘ra, ustritsani qaysi davrda iste'mol qilish eng ideal hisoblanadi?",
+    "options": [
+      "Faqat issiq yoz oylarida",
+      "Nomida \"R\" harfi bor oylarda",
+      "Yilning faqat birinchi va oxirgi haftasida",
+      "Faqat bahoriy ko‘payish davrida"
+    ],
+    "correct_index": 1,
+    "explanation": "Qadimiy qoidaga ko‘ra, nomida \"R\" harfi bo‘lgan oylarda (sentyabr–aprel) ustritsaning go‘shti eng sifatli va mazali bo‘ladi."
+  }
+}
