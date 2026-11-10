@@ -1110,5 +1110,13 @@
     "topic": "No'xat (Chickpeas) — Tarix, tabiat va kutilmagan sirlari",
     "title": "No'xat haqida 4 ta hayratlanarli fakt",
     "message_id": 1284
+  },
+  {
+    "datetime": "2026-11-10T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shtidagi o'ziga xos hid kimyosi va uni bartaraf etish ilmi",
+    "title": "Qo'y go'shtidagi hid kimyosi va uni bartaraf etish usullari",
+    "message_id": 1290
   }
 ]
