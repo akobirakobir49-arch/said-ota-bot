@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1302,
+  "topic": "Vakuumdagi mol go'shti rangi va miyoglobin kimyosi",
+  "category": "Mol go'shti",
+  "rubric": "useful",
+  "published_at": "2026-11-12T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-12T15:00:01+05:00",
+  "quiz": {
+    "question": "Vakuumli paket ochilgach, to‘q rangli mol go‘shti nega 15-20 daqiqada yorqin qizil tusga kiradi?",
+    "options": [
+      "Go‘sht tarkibidagi yog‘lar eriydi",
+      "Miyoglobin oqsili kislorod bilan reaksiyaga kirishadi",
+      "Go‘shtdagi tuz konsentratsiyasi kamayadi",
+      "Xona haroratida bakteriyalar ko‘payadi"
+    ],
+    "correct_index": 1,
+    "explanation": "Go‘shtdagi miyoglobin oqsili havodagi kislorod bilan muloqotga kirishganda oximiyolobinga aylanadi va yorqin qizil tus oladi."
+  }
+}
