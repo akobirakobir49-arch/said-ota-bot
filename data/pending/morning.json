@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1308,
+  "topic": "Ovqatdan so'ng darhol choy ichish xatosi: Taninlar va temir (Fe) so'rilishi kimyosi",
+  "category": "Choy va ichimliklar",
+  "rubric": "useful",
+  "published_at": "2026-11-13T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-13T15:00:01+05:00",
+  "quiz": {
+    "question": "Taom tarkibidagi temir moddasi organizmga yaxshi so‘rilishi uchun choyni qachon ichgan ma’qul?",
+    "options": [
+      "Ovqat yeyish jarayonida",
+      "Taomdan darhol so‘ng, issiq holida",
+      "Taomdan 45-60 daqiqa o‘tib",
+      "Faqat sut qo‘shib ichish kerak"
+    ],
+    "correct_index": 2,
+    "explanation": "Tadqiqotlarga ko‘ra, choy ichishni taomdan so‘ng kamida 45-60 daqiqaga kechiktirish temir so‘rilishini to‘liq me’yoriy darajaga qaytaradi."
+  }
+}

@@ -1158,5 +1158,13 @@
     "topic": "Tabiiy asal va arilar dunyosining kutilmagan sirlari",
     "title": "Asal va arilar haqida hayratlanarli faktlar",
     "message_id": 1305
+  },
+  {
+    "datetime": "2026-11-13T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Choy va ichimliklar",
+    "topic": "Ovqatdan so'ng darhol choy ichish xatosi: Taninlar va temir (Fe) so'rilishi kimyosi",
+    "title": "Ovqatdan so'ng choy ichish va temir so'rilishi",
+    "message_id": 1308
   }
 ]
