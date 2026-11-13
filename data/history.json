@@ -1166,5 +1166,13 @@
     "topic": "Ovqatdan so'ng darhol choy ichish xatosi: Taninlar va temir (Fe) so'rilishi kimyosi",
     "title": "Ovqatdan so'ng choy ichish va temir so'rilishi",
     "message_id": 1308
+  },
+  {
+    "datetime": "2026-11-13T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Ziravorlar va kraviy o'tlar",
+    "topic": "Zafaron (Shafran)",
+    "title": "Zafaron haqida 4 ta hayratlanarli fakt",
+    "message_id": 1311
   }
 ]
