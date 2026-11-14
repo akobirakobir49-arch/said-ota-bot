@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1314,
+  "topic": "Muzlatilgan baliq va dengiz mahsulotidagi muz glazuri (Glaze) ilmi",
+  "category": "Muzlatilgan mahsulotlar",
+  "rubric": "useful",
+  "published_at": "2026-11-14T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-14T15:00:01+05:00",
+  "quiz": {
+    "question": "Muzlatilgan baliq yuzasidagi 6–10% yupqa muz (glazur) ning asosiy vazifasi nima?",
+    "options": [
+      "Baliq vaznini sun'iy ravishda oshirish",
+      "Baliqni kislorod ta'sirida oksidlanish va qurishdan saqlash",
+      "Baliqning pishish vaqtini uzaytirish",
+      "Baliq rangi va hidini sun'iy o'zgartirish"
+    ],
+    "correct_index": 1,
+    "explanation": "Yupqa glazur qatlami baliqni havodagi kisloroddan ajratib, Omega-3 va oqsillarning buzilishidan asraydigan prirodniy qalqondir."
+  }
+}
