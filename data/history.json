@@ -1198,5 +1198,13 @@
     "topic": "Tuxum sarig'ining rangi (och sariq va to'q zargaldoq): Sifat va foyda ko'rsatkichimi?",
     "title": "Tuxum sarig'ining rangi va uning haqiqiy qiymati",
     "message_id": 1320
+  },
+  {
+    "datetime": "2026-11-15T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+    "topic": "Parmigiano Reggiano (Parmesan) pishlog'i",
+    "title": "Parmigiano Reggiano pishlog'i haqida 4 ta ajoyib fakt",
+    "message_id": 1323
   }
 ]
