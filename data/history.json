@@ -1214,5 +1214,13 @@
     "topic": "Qizil loviya va fitohemagglyutinin toksini: Nega uni past haroratda pishirib bo'lmaydi?",
     "title": "Qizil loviyani to'g'ri pishirish va konservalangan loviyaning afzalligi",
     "message_id": 1326
+  },
+  {
+    "datetime": "2026-11-16T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+    "topic": "Zaytun yog'i",
+    "title": "Zaytun yog'i haqida 4 ta hayratlanarli fakt",
+    "message_id": 1329
   }
 ]

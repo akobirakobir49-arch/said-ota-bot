@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1329,
+  "topic": "Zaytun yog'i",
+  "category": "Yog'lar (paxta, kungaboqar, zaytun, sariyog')",
+  "rubric": "facts",
+  "published_at": "2026-11-16T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-16T20:00:02+05:00",
+  "quiz": {
+    "question": "Qadimgi Yunonistonda Olimpiada g‘oliblariga eng qimmatbaho mukofot va valyuta sifatida nima topshirilgan?",
+    "options": [
+      "Oltin va kumush tangalar",
+      "Zaytun yog‘i to‘la amfora ko‘zalari",
+      "Zaytun daraxti ko‘chatlari",
+      "Qimmatbaho zargarlik buyumlari"
+    ],
+    "correct_index": 1,
+    "explanation": "Qadimgi davrlarda zaytun yog‘i boylik belgisi bo‘lgan, shu sababli musobaqa g‘oliblariga zaytun yog‘i to‘ldirilgan ko‘zalar mukofot qilib berilgan."
+  }
+}
