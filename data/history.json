@@ -1222,5 +1222,13 @@
     "topic": "Zaytun yog'i",
     "title": "Zaytun yog'i haqida 4 ta hayratlanarli fakt",
     "message_id": 1329
+  },
+  {
+    "datetime": "2026-11-17T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Hurmo (Sharq hurmosi) va uning og'izni burishtirish kimyosi",
+    "title": "Hurmoning og'izni burishtirish sababi va uni shirin qilish ilmi",
+    "message_id": 1334
   }
 ]
