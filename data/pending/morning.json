@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1340,
+  "topic": "Kartoshka va piyozni bir joyda saqlash xatosi (Etilen va namlik kimyosi)",
+  "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+  "rubric": "useful",
+  "published_at": "2026-11-18T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-18T15:00:01+05:00",
+  "quiz": {
+    "question": "Piyoz bilan yonma-yon turgan kartoshka nima sababdan barvaqt unib va ko‘karib ketadi?",
+    "options": [
+      "Piyoz ajratadigan etilen gazi sababli",
+      "Piyoz havo haroratini oshirgani sababli",
+      "Kartoshka piyozdagi tuzni shimib olgani sababli",
+      "Kartoshkada namlik yetishmovchiligi bo‘lgani sababli"
+    ],
+    "correct_index": 0,
+    "explanation": "Piyoz o‘zidan fitogormon — etilen gazi chiqaradi. Bu gaz kartoshkaning uyqu holatini buzib, uni tez unib chiqishga majbur qiladi."
+  }
+}

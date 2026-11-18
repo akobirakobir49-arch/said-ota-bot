@@ -1238,5 +1238,13 @@
     "topic": "Kurka go'shti (Turkey)",
     "title": "Kurka go'shti haqida faktlar",
     "message_id": 1337
+  },
+  {
+    "datetime": "2026-11-18T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mahsulotlarni to'g'ri saqlash va muddatlar",
+    "topic": "Kartoshka va piyozni bir joyda saqlash xatosi (Etilen va namlik kimyosi)",
+    "title": "Kartoshka va piyozni bir joyda saqlash xatosi",
+    "message_id": 1340
   }
 ]
