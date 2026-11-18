@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1343,
+  "topic": "Muzlatilgan kartoshka fri",
+  "category": "Muzlatilgan mahsulotlar",
+  "rubric": "facts",
+  "published_at": "2026-11-18T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-18T20:00:02+05:00",
+  "quiz": {
+    "question": "Muzlatilgan fri kartoshkasi nima sababdan o'ta qarsillaydigan bo'ladi?",
+    "options": [
+      "Ko'p miqdorda tuz sepilgani uchun",
+      "Muzlatishdan oldin blanshlab va quritilgani uchun",
+      "Maxsus yog'da ivitib olingani uchun",
+      "Pishirishdan oldin to'liq eritilgani uchun"
+    ],
+    "correct_index": 1,
+    "explanation": "Sanoatda muzlatishdan oldin kartoshka blanshlanadi va quritiladi. Bu jarayon sirtida mikrog'ovak qatlam hosil qilib, uni juda qarsillama qiladi."
+  }
+}

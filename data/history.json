@@ -1246,5 +1246,13 @@
     "topic": "Kartoshka va piyozni bir joyda saqlash xatosi (Etilen va namlik kimyosi)",
     "title": "Kartoshka va piyozni bir joyda saqlash xatosi",
     "message_id": 1340
+  },
+  {
+    "datetime": "2026-11-18T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Muzlatilgan mahsulotlar",
+    "topic": "Muzlatilgan kartoshka fri",
+    "title": "Muzlatilgan kartoshka fri haqida faktlar",
+    "message_id": 1343
   }
 ]
