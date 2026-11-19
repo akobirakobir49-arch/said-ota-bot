@@ -1254,5 +1254,13 @@
     "topic": "Muzlatilgan kartoshka fri",
     "title": "Muzlatilgan kartoshka fri haqida faktlar",
     "message_id": 1343
+  },
+  {
+    "datetime": "2026-11-19T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Quruq mevalar va yong'oqlar",
+    "topic": "O'rik turshagi (kuraga) va E220 (oltingugurt dioksidi) konservanti ilmi",
+    "title": "Kuraga tanlash va uyda tozalash sirlari",
+    "message_id": 1346
   }
 ]
