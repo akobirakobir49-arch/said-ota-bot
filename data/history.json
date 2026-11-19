@@ -1262,5 +1262,13 @@
     "topic": "O'rik turshagi (kuraga) va E220 (oltingugurt dioksidi) konservanti ilmi",
     "title": "Kuraga tanlash va uyda tozalash sirlari",
     "message_id": 1346
+  },
+  {
+    "datetime": "2026-11-19T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Qo'y go'shti",
+    "topic": "Qo'y go'shti",
+    "title": "Qo'y go'shti haqida hayratlanarli faktlar",
+    "message_id": 1352
   }
 ]
