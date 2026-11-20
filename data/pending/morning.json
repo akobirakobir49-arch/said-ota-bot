@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1355,
+  "topic": "Shaffof idishdagi sut va yorug'lik foto-oksidlanishi",
+  "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+  "rubric": "useful",
+  "published_at": "2026-11-20T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-20T15:00:01+05:00",
+  "quiz": {
+    "question": "Yorug‘lik o‘tkazmaydigan karton qadoq (Tetra Pak) sutdagi B2 vitamini va ta’m sifatini necha haftagacha o‘zgartirmay saqlay oladi?",
+    "options": [
+      "Atigi 1 haftagacha",
+      "4 haftagacha",
+      "13 haftagacha",
+      "26 haftagacha"
+    ],
+    "correct_index": 2,
+    "explanation": "Virginia Tech tadqiqotiga ko‘ra, nurni to‘suvchi karton qadoqlar sutdagi riboflavin va ta’m me’yorini 13 haftagacha saqlaydi."
+  }
+}

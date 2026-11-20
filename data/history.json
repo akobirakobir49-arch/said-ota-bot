@@ -1270,5 +1270,13 @@
     "topic": "Qo'y go'shti",
     "title": "Qo'y go'shti haqida hayratlanarli faktlar",
     "message_id": 1352
+  },
+  {
+    "datetime": "2026-11-20T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Sut mahsulotlari (sut, qatiq, tvorog, pishloq)",
+    "topic": "Shaffof idishdagi sut va yorug'lik foto-oksidlanishi",
+    "title": "Sut qadoqlari va yorug'lik ta'siri haqida",
+    "message_id": 1355
   }
 ]
