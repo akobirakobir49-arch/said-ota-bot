@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1369,
+  "topic": "Qovoq (Pumpkin)",
+  "category": "Sabzavotlar va ko'katlar",
+  "rubric": "facts",
+  "published_at": "2026-11-21T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-21T20:00:01+05:00",
+  "quiz": {
+    "question": "Qovoqning urg‘ochi guli o‘z hayotida qancha vaqt davomida ochilib turadi?",
+    "options": [
+      "1 kun davomida",
+      "Bor-yo‘g‘i 4 soat",
+      "Bir hafta davomida",
+      "Faqat tunda 2 soat"
+    ],
+    "correct_index": 1,
+    "explanation": "Qovoqning urg‘ochi guli hayotida faqat bir marta — ertalabki 4 soat ichida ochiladi va shu vaqtda changlanishi kerak."
+  }
+}
