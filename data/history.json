@@ -1286,5 +1286,13 @@
     "topic": "Zarang siropi (Maple syrup)",
     "title": "Zarang siropi haqida 4 ta fakt",
     "message_id": 1358
+  },
+  {
+    "datetime": "2026-11-21T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Tuxum",
+    "topic": "Xom tuxum ichish afsonasi: Pishirilgan va xom tuxum oqsilining so'rilish kimyosi (51% va 91%) va Avidin to'sig'i",
+    "title": "Xom tuxum va pishirilgan tuxum oqsilining so'rilishi",
+    "message_id": 1366
   }
 ]
