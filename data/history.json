@@ -1310,5 +1310,13 @@
     "topic": "Xom tovuq go'shtini kran suvida yuvish xatosi va oshxona aerosoli ilmi",
     "title": "Tovuq go'shtini yuvish xatosi va oshxona gigiyenasi",
     "message_id": 1378
+  },
+  {
+    "datetime": "2026-11-22T17:00:01+05:00",
+    "slot": "evening",
+    "category": "Konservalar va tayyor mahsulotlar",
+    "topic": "Konservalangan sardina baliqlari",
+    "title": "Konservalangan sardina baliqlari haqida qiziqarli faktlar",
+    "message_id": 1386
   }
 ]
