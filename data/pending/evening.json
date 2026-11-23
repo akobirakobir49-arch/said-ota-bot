@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1397,
+  "topic": "Pista (Pistachio)",
+  "category": "Quruq mevalar va yong'oqlar",
+  "rubric": "facts",
+  "published_at": "2026-11-23T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-23T20:00:01+05:00",
+  "quiz": {
+    "question": "Botanika fani nuqtai nazaridan pista aslida nima hisoblanadi?",
+    "options": [
+      "Haqiqiy daraxt yong'og'i",
+      "Mag'izli meva (drupe) urug'i",
+      "Dukkakli o'simlik donasi",
+      "Ildizmevali sabzavot turi"
+    ],
+    "correct_index": 1,
+    "explanation": "Pista kundalik hayotda yong‘oq deyilsa-da, botanikada shaftoli va gilos kabi mag‘izli mevalar urug‘i hisoblanadi."
+  }
+}
