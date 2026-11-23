@@ -1318,5 +1318,13 @@
     "topic": "Konservalangan sardina baliqlari",
     "title": "Konservalangan sardina baliqlari haqida qiziqarli faktlar",
     "message_id": 1386
+  },
+  {
+    "datetime": "2026-11-23T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Bolalar oziq-ovqati (mahsulot tanlash va saqlash)",
+    "topic": "Chaqaloqlar bo'tqasi (kasha): Guruch va Suli o'rtasidagi yashirin farq hamda Noorganik Mishyak ilmi",
+    "title": "Chaqaloqlar uchun bo'tqa tanlashda xilma-xillik va suli afzalliklari",
+    "message_id": 1394
   }
 ]
