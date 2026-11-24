@@ -1334,5 +1334,13 @@
     "topic": "Pista (Pistachio)",
     "title": "Pista haqida 4 ta hayratlanarli fakt",
     "message_id": 1397
+  },
+  {
+    "datetime": "2026-11-24T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Oziq-ovqat xavfsizligi va sifatini tanlash",
+    "topic": "Mog'orlagan oziq-ovqatlar xavfsizligi va Gifa iplari ilmi",
+    "title": "Mog'orlagan taomlar xavfsizligi",
+    "message_id": 1402
   }
 ]
