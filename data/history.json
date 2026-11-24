@@ -1342,5 +1342,13 @@
     "topic": "Mog'orlagan oziq-ovqatlar xavfsizligi va Gifa iplari ilmi",
     "title": "Mog'orlagan taomlar xavfsizligi",
     "message_id": 1402
+  },
+  {
+    "datetime": "2026-11-24T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Baliq va dengiz mahsulotlari",
+    "topic": "Qizil baliq (Losos)",
+    "title": "Qizil baliq (Losos) haqida 4 ta hayratlanarli fakt",
+    "message_id": 1405
   }
 ]
