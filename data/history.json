@@ -1366,5 +1366,13 @@
     "topic": "Sariyog' (Butter)",
     "title": "Sariyog' haqida 4 ta hayratlanarli fakt",
     "message_id": 1417
+  },
+  {
+    "datetime": "2026-11-26T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Mevalar (mavsumiy va import)",
+    "topic": "Behi (Cydonia oblonga) ilmi: Nega u pishirilganda qizaradi va oshqozonga qanday ta'sir qiladi?",
+    "title": "Behi nima uchun pishirilganda qizaradi?",
+    "message_id": 1422
   }
 ]
