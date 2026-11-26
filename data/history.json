@@ -1374,5 +1374,13 @@
     "topic": "Behi (Cydonia oblonga) ilmi: Nega u pishirilganda qizaradi va oshqozonga qanday ta'sir qiladi?",
     "title": "Behi nima uchun pishirilganda qizaradi?",
     "message_id": 1422
+  },
+  {
+    "datetime": "2026-11-26T17:00:02+05:00",
+    "slot": "evening",
+    "category": "Tovuq go'shti va parranda",
+    "topic": "O'rdak go'shti",
+    "title": "O'rdak go'shti haqida hayratlanarli faktlar",
+    "message_id": 1437
   }
 ]

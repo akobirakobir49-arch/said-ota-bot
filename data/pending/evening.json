@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1437,
+  "topic": "O'rdak go'shti",
+  "category": "Tovuq go'shti va parranda",
+  "rubric": "facts",
+  "published_at": "2026-11-26T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-26T20:00:02+05:00",
+  "quiz": {
+    "question": "Bugungi kunda dunyodagi aksariyat Pekin o‘rdaklari nechta ajdod o‘rdak naslidan kelib chiqqan?",
+    "options": [
+      "4 ta",
+      "12 ta",
+      "50 ta",
+      "100 ta"
+    ],
+    "correct_index": 0,
+    "explanation": "1873-yilda Xitoydan Amerikaga olib kelingan bor-yo‘g‘i 4 ta Pekin o‘rdagi bugungi tijorat o‘rdaklarining asosiy naslboshisi hisoblanadi."
+  }
+}
