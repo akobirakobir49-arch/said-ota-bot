@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1450,
+  "topic": "Grechka sirlari",
+  "category": "Yormalar va dukkaklilar (guruch, grechka, no'xat, loviya)",
+  "rubric": "facts",
+  "published_at": "2026-11-27T17:00:02+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-27T20:00:02+05:00",
+  "quiz": {
+    "question": "Botanik nuqtai nazardan grechka qaysi o‘simliklar bilan bir oilaga mansub?",
+    "options": [
+      "Bug‘doy va guruch",
+      "Makkajo‘xori va arpa",
+      "Rovoch va otquloq",
+      "Nohot va mosh"
+    ],
+    "correct_index": 2,
+    "explanation": "Grechka g‘alladoshlar emas, botanik jihatdan rovoch va otquloq bilan bitta psevdo-don (gul urug‘i) oilasiga kiradi."
+  }
+}
