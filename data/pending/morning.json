@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1442,
+  "topic": "Qaynatilgan tuxum sarig'idagi yashil halqa va oson archilish ilmi",
+  "category": "Tuxum",
+  "rubric": "useful",
+  "published_at": "2026-11-27T09:00:01+05:00",
+  "poll_after_hours": 6.0,
+  "poll_due_at": "2026-11-27T15:00:01+05:00",
+  "quiz": {
+    "question": "Qaynatilgan tuxum sarig'i atrofida yashil parda hosil bo'lishining asosiy sababi nima?",
+    "options": [
+      "Tuxumning sifatini yo'qotib aynigani",
+      "Tuxumni uzoq vaqt pishirib yuborish",
+      "Suvga o'ta ko'p tuz solingani",
+      "Tuxumning juda yangiligi"
+    ],
+    "correct_index": 1,
+    "explanation": "Tuxum 10-12 daqiqadan ortiq pishirilganda oltingugurt va temir birikib, zararsiz yashil temir sulfid pardasini hosil qiladi."
+  }
+}

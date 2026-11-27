@@ -1382,5 +1382,13 @@
     "topic": "O'rdak go'shti",
     "title": "O'rdak go'shti haqida hayratlanarli faktlar",
     "message_id": 1437
+  },
+  {
+    "datetime": "2026-11-27T09:00:01+05:00",
+    "slot": "morning",
+    "category": "Tuxum",
+    "topic": "Qaynatilgan tuxum sarig'idagi yashil halqa va oson archilish ilmi",
+    "title": "Qaynatilgan tuxum sarig'idagi yashil halqa haqida",
+    "message_id": 1442
   }
 ]
