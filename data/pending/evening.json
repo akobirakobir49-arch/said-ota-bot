@@ -1,0 +1,20 @@
+{
+  "channel_message_id": 1465,
+  "topic": "Keshuyu (Cashew)",
+  "category": "Quruq mevalar va yong'oqlar",
+  "rubric": "facts",
+  "published_at": "2026-11-28T17:00:01+05:00",
+  "poll_after_hours": 3.0,
+  "poll_due_at": "2026-11-28T20:00:01+05:00",
+  "quiz": {
+    "question": "Keshuyu yong‘og‘i tabiatda qanday tarzda o‘sadi?",
+    "options": [
+      "Meva ichidagi odatiy urug‘ kabi",
+      "Mevaning tashqarisida, pastki qismida",
+      "Daraxt ildizida tuproq ostida",
+      "Daraxt po‘stlog‘ining ichida"
+    ],
+    "correct_index": 1,
+    "explanation": "Keshuyu noyob biologik xususiyatga ega: u soxta mevaning ichida emas, balki uning pastki qismida, tashqarida alohida o‘sib chiqadi."
+  }
+}
