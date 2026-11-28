@@ -1398,5 +1398,13 @@
     "topic": "Grechka sirlari",
     "title": "Grechka haqida 4 ta hayratlanarli fakt",
     "message_id": 1450
+  },
+  {
+    "datetime": "2026-11-28T09:00:02+05:00",
+    "slot": "morning",
+    "category": "Sabzavotlar va ko'katlar",
+    "topic": "Sarimsoqpiyoz va «10 daqiqa qoidasi»: uning shifobaxsh kimyosini saqlab qolish ilmi",
+    "title": "Sarimsoqpiyoz va 10 daqiqa qoidasi",
+    "message_id": 1456
   }
 ]
